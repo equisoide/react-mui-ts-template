@@ -1,6 +1,17 @@
-# React, TypeScript and MUI starter project
+# React, MUI and TypeScript starter project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Features
+ - `React 18.1.0` with `React Scripts 5.0.1`
+ - `Material UI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
+ - `TypeScript 4.4.2`
+ - `esLint 8.14.0` with `airbnb` and `TypeScript` plugins
+ - `stylelint 14.8.2`
+ - Built-in environment files: `local`, `test`, `development`, `qa`, `staging` and `production`
+ - `.editorconfig` settings to standardize ending of lines and indentation
+ - `.vscode` settings to sort explorer items by type and to get faster search results
+ - `.gitignore` settings to prevent auto-generated files to be committed
 
 Below you will find some information on how to perform common tasks.
 
@@ -38,4 +49,3 @@ Below you will find some information on how to perform common tasks.
 | `npm run build:loc` | Builds the app for `local` to the `build` folder        | env.local       |
 | `npm run build:qa`  | Builds the app for `qa` to the `build` folder           | env.qa          |
 | `npm run build:stg` | Builds the app for `staging` to the `build` folder      | env.staging     |
-
