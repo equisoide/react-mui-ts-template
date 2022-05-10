@@ -1,0 +1,10 @@
+{
+  "explorer.sortOrder": "type",
+  "files.eol": "\n",
+  "search.exclude": {
+    "**/build": true,
+    "**/coverage": true,
+    "**/node_modules": true,
+    "package-lock.json": true
+  }
+}
