@@ -57,3 +57,12 @@ Below you will find some information on how to perform common tasks.
  - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
  - Before running or building this application always run linters and unit tests
  - The Unit Test Coverage Report only takes into account `.ts` files placed in the `src` folder. Testing react components is totally optional
+
+## Creator
+
+**Juan Cuartas** https://twitter.com/juancuartas
+
+## Copyright and license
+
+Code and documentation released under [the MIT license](https://github.com/equisoide/react-web-boilerplate/blob/master/LICENSE)
+
