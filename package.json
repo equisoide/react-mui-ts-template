@@ -1,13 +1,14 @@
 {
   "name": "react-web-boilerplate",
   "version": "0.1.0",
-  "description": "React and TypeScript example starter project",
+  "description": "React, TypeScript and MUI starter project",
   "private": false,
   "homepage": "./",
   "keywords": [
-    "typescript",
+    "mui",
     "react",
-    "starter"
+    "starter",
+    "typescript"
   ],
   "dependencies": {
     "@emotion/react": "11.9.0",
