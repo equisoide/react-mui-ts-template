@@ -33,9 +33,9 @@ Below you will find some information on how to perform common tasks.
 | `npm run stylelint` | Analyses CSS files for potential errors                 | N/A             |
 | `npm test`          | Launches the test runner                                | env.test        |
 | `npm start`         | Runs the app in http://localhost:3000                   | env.local       |
-| `npm run build`     | Builds the app for production to the `build` folder     | env.production  |
-| `npm run build:dev` | Builds the app for development to the `build` folder    | env.development |
-| `npm run build:loc` | Builds the app for local to the `build` folder          | env.local       |
-| `npm run build:qa`  | Builds the app for qa to the `build` folder             | env.qa          |
-| `npm run build:stg` | Builds the app for staging to the `build` folder        | env.staging     |
+| `npm run build`     | Builds the app for `production` to the `build` folder   | env.production  |
+| `npm run build:dev` | Builds the app for `development` to the `build` folder  | env.development |
+| `npm run build:loc` | Builds the app for `local` to the `build` folder        | env.local       |
+| `npm run build:qa`  | Builds the app for `qa` to the `build` folder           | env.qa          |
+| `npm run build:stg` | Builds the app for `staging` to the `build` folder      | env.staging     |
 
