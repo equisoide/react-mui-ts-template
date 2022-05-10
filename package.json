@@ -1,14 +1,22 @@
 {
   "name": "react-web-boilerplate",
   "version": "0.1.0",
-  "description": "React, TypeScript and MUI starter project",
+  "description": "React, MUI and TypeScript starter project",
   "private": false,
   "homepage": "./",
   "keywords": [
+    "airbnb",
+    "editorconfig",
+    "emotion",
+    "eslint",
+    "materialui",
     "mui",
     "react",
+    "roboto",
     "starter",
-    "typescript"
+    "stylelint",
+    "typescript",
+    "vscode"
   ],
   "dependencies": {
     "@emotion/react": "11.9.0",
