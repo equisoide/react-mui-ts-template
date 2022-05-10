@@ -23,7 +23,7 @@ Below you will find some information on how to perform common tasks.
 1. Clone this repo: `git clone https://github.com/equisoide/react-web-boilerplate.git`
 2. Install all required packages: `npm install`
 3. Create `.env.local` file in the `env` folder with your own environment variables
-4. Start de application: `npm start`
+4. Start the application: `npm start`
 
 ## Available Scripts
 | Command             | Description                                             | Evironment      |
