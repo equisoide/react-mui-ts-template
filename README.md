@@ -49,3 +49,11 @@ Below you will find some information on how to perform common tasks.
 | `npm run build:loc` | Builds the app for `local` to the `build` folder        | env.local       |
 | `npm run build:qa`  | Builds the app for `qa` to the `build` folder           | env.qa          |
 | `npm run build:stg` | Builds the app for `staging` to the `build` folder      | env.staging     |
+
+## Working guidelines
+ - Create React components with `.tsx` extension
+ - Create JavaScript files with `.ts` extension
+ - Add your own environment variables to the `env/env.local` file, this file should not be commited
+ - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
+ - Before running or building this application always run linters and unit tests
+ - The Unit Test Coverage Report only takes into account `.ts` files placed in the `src` folder. Testing react components is totally optional
