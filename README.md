@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Features
  - `React 18.1.0` with `React Scripts 5.0.1`
  - `Material UI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
- - `TypeScript 4.4.2`
+ - `TypeScript 4.4.2` and `ES6`
  - `esLint 8.14.0` with `airbnb` and `TypeScript` plugins
  - `stylelint 14.8.2`
  - Built-in environment files: `local`, `test`, `development`, `qa`, `staging` and `production`
@@ -57,6 +57,12 @@ Below you will find some information on how to perform common tasks.
  - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
  - Before running or building this application always run linters and unit tests
  - The Unit Test Coverage Report only takes into account `.ts` files placed in the `src` folder. Testing react components is totally optional
+
+## Useful links
+ - [Material UI crash course](https://www.youtube.com/watch?v=o1chMISeTC0)
+ - [Material UI components](https://mui.com/material-ui/react-autocomplete/)
+ - [Material UI templates](https://mui.com/material-ui/getting-started/templates/)
+
 
 ## Creator
 
