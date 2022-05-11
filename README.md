@@ -59,7 +59,9 @@ Below you will find some information on how to perform common tasks.
  - The Unit Test Coverage Report only takes into account `.ts` files placed in the `src` folder. Testing react components is totally optional
 
 ## Useful links
- - [Material UI crash course](https://www.youtube.com/watch?v=o1chMISeTC0)
+ - [Official React documentation](https://reactjs.org/)
+ - [Create React App](https://create-react-app.dev/)
+ - [Material UI crash course](https://www.youtube.com/watch?v=o1chMISeTC0/)
  - [Material UI components](https://mui.com/material-ui/react-autocomplete/)
  - [Material UI templates](https://mui.com/material-ui/getting-started/templates/)
 
