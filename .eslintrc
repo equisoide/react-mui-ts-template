@@ -43,6 +43,8 @@
     "no-plusplus": "off",
     "no-shadow": "off",
     "quotes": ["error", "single"],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-props-no-spreading": "off",
