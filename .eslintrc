@@ -3,13 +3,15 @@
   "plugins": [
     "react",
     "react-hooks",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "jest"
   ],
   "extends": [
     "airbnb",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
   ],
   "env": {
     "browser": true,

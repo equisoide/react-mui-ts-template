@@ -4,9 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Features
  - `React 18.1.0` with `React Scripts 5.0.1`
- - `Material UI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
+ - `MUI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
  - `TypeScript 4.6.4` and `ES6`
- - `ESLint 8.15.0` with `Airbnb`, `TypeScript` `React` and `React Hooks` plugins
+ - React Testing Library
+ - `ESLint 8.15.0` with `Airbnb`, `TypeScript`, `React`, `Hooks` and `Jest` configuration
  - `Stylelint 14.8.2`
  - `.editorconfig` settings to standardize charset, ending of lines and indentation
  - `.vscode` settings to sort explorer items by type and to get faster search results
@@ -67,9 +68,9 @@ Below you will find some information on how to perform common tasks.
 ## Useful links
  - [Official React documentation](https://reactjs.org/)
  - [Create React App](https://create-react-app.dev/)
- - [Material UI crash course](https://www.youtube.com/watch?v=o1chMISeTC0/)
- - [Material UI components](https://mui.com/material-ui/react-autocomplete/)
- - [Material UI templates](https://mui.com/material-ui/getting-started/templates/)
+ - [MUI crash course](https://www.youtube.com/watch?v=o1chMISeTC0/)
+ - [MUI components](https://mui.com/material-ui/react-autocomplete/)
+ - [MUI templates](https://mui.com/material-ui/getting-started/templates/)
 
 
 ## Creator

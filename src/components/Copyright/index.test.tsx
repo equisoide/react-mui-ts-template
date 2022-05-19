@@ -3,6 +3,6 @@ import Copyright from '.';
 
 test('Render Copyright Component', () => {
   render(<Copyright />);
-  const copyrightElement = screen.getByText(/Copyright/i);
-  expect(copyrightElement).toBeInTheDocument();
+  const element = screen.getByText(/Copyright/i);
+  expect(element).toBeInTheDocument();
 });
