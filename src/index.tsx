@@ -9,8 +9,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import './styles/site.css';
 
-const htmlRoute = document.getElementById('root') as HTMLElement;
-const reactRoot = ReactDOM.createRoot(htmlRoute);
+const htmlRoot = document.getElementById('root') as HTMLElement;
+const reactRoot = ReactDOM.createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
