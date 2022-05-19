@@ -31,7 +31,7 @@ Below you will find some information on how to perform common tasks.
 
 ## Running the application for the first time
 
-1. Clone repo: `git clone https://github.com/equisoide/react-web-boilerplate.git`
+1. Clone repo: `git clone https://github.com/equisoide/react-mui-ts-starter.git`
 2. Install all required packages: `npm install`
 3. Create `.env.local` file in the `env` folder with your own environment variables
 4. Start the application: `npm start`
