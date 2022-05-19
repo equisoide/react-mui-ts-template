@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - `React 18.1.0` with `React Scripts 5.0.1`
  - `Material UI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
  - `TypeScript 4.6.4` and `ES6`
- - `ESLint 8.15.0` with `Airbnb`, `TypeScript` and `React` plugins
+ - `ESLint 8.15.0` with `Airbnb`, `TypeScript` `React` and `React Hooks` plugins
  - `Stylelint 14.8.2`
  - `.editorconfig` settings to standardize charset, ending of lines and indentation
  - `.vscode` settings to sort explorer items by type and to get faster search results
