@@ -59,19 +59,23 @@ Below you will find some information on how to perform common tasks.
  - Add your own environment variables to the `env/.env.local` file, this file should not be commited
  - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
  - Before running or building this application always run linters and unit tests
- - Linter is configured to accept valid ending of lines as LF (unix style), if you are on Windows, to avoid Git converting from LF to CRLF, run the following commands:
+ - Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
    ```shell
    git config --global core.autocrlf false
    git config --global core.eol lf
    ```
 
 ## Useful links
- - [Official React documentation](https://reactjs.org/)
- - [Create React App](https://create-react-app.dev/)
- - [MUI crash course](https://www.youtube.com/watch?v=o1chMISeTC0/)
- - [MUI components](https://mui.com/material-ui/react-autocomplete/)
- - [MUI templates](https://mui.com/material-ui/getting-started/templates/)
+ - [Official React Documentation](https://reactjs.org/)
+ - [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0/)
+ - [MUI Components](https://mui.com/material-ui/react-autocomplete/)
+ - [MUI Templates](https://mui.com/material-ui/getting-started/templates/)
 
+ ## Tutorials I followed to create this project
+ - [Create React App](https://create-react-app.dev/)
+ - [Creating a React App from scratch 2022](https://haithai91.medium.com/creating-a-react-app-from-scratch-2022-3a66788d66f9)
+ - [MUI Installation](https://mui.com/material-ui/getting-started/installation/)
+ - [env-cmd: Load environment variables from an .env file](https://www.npmjs.com/package/env-cmd)
 
 ## Creator
 
