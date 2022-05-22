@@ -6,13 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - `React 18.1.0` with `React Scripts 5.0.1`
  - `MUI 5.6.4` with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
  - `TypeScript 4.6.4` and `ES6`
- - React Testing Library
- - `ESLint 8.15.0` with `Airbnb`, `TypeScript`, `React`, `Hooks` and `Jest` configuration
+ - `ESLint 8.15.0` with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
  - `Stylelint 14.8.2`
+ - Localization with `i18next`
+ - React Testing Library
+ - Built-in environment files: `local`, `test`, `development`, `qa`, `staging` and `production`
  - `.editorconfig` settings to standardize charset, ending of lines and indentation
  - `.vscode` settings to sort explorer items by type and to get faster search results
  - `.gitignore` settings to prevent auto-generated files to be committed
- - Built-in environment files: `local`, `test`, `development`, `qa`, `staging` and `production`
+
 
 Below you will find some information on how to perform common tasks.
 
@@ -53,9 +55,10 @@ Below you will find some information on how to perform common tasks.
 | `npm run build:stg` | Builds the app for `staging` to the `build` folder        | env.staging     |
 
 ## Working guidelines
- - Create React components with `.tsx` extension
- - Create JavaScript files with `.ts` extension
- - Create Unit Test files with `.test.tsx` extension
+ - Create JavaScript files with `.ts` extension (TypeScript)
+ - Create React components with `.tsx` extension (TypeScript JSX)
+ - Create Unit Test files with `.unit.test.ts` or `.unit.test.tsx` extension, place those files next to the file you are testing
+ - Don't hardcode rendered text, use `i18n` library. Incorrect: `<b>Hello</b>`, Correct: `<b>{t('hello')}</b>`
  - Add your own environment variables to the `env/.env.local` file, this file should not be commited
  - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
  - Before running or building this application always run linters and unit tests
@@ -65,17 +68,21 @@ Below you will find some information on how to perform common tasks.
    git config --global core.eol lf
    ```
 
-## Useful links
+## Documentation & Training
  - [Official React Documentation](https://reactjs.org/)
  - [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0/)
  - [MUI Components](https://mui.com/material-ui/react-autocomplete/)
  - [MUI Templates](https://mui.com/material-ui/getting-started/templates/)
+ - [Jest](https://jestjs.io/docs/getting-started)
+ - [React Testing Library](https://testing-library.com/docs/)
+ - [Measuring performance with Web Vitals and React](https://wanago.io/2022/02/07/measuring-performance-web-vitals-react/)
 
  ## Tutorials I followed to create this project
  - [Create React App](https://create-react-app.dev/)
  - [Creating a React App from scratch 2022](https://haithai91.medium.com/creating-a-react-app-from-scratch-2022-3a66788d66f9)
  - [MUI Installation](https://mui.com/material-ui/getting-started/installation/)
- - [env-cmd: Load environment variables from an .env file](https://www.npmjs.com/package/env-cmd)
+ - [How to Implement localization in React i18next 2022](https://www.ultimateakash.com/blog-details/IixDOGAKYAo=/How-to-Implement-localization-in-React-i18next-2022)
+ - [env-cmd: Load environment variables from an .env file](https://github.com/toddbluhm/env-cmd)
 
 ## Creator
 
