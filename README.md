@@ -14,6 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - `.editorconfig` settings to standardize charset, ending of lines and indentation
  - `.vscode` settings to sort explorer items by type and to get faster search results
  - `.gitignore` settings to prevent auto-generated files to be committed
+ - `npm` as Package Manager
 
 
 Below you will find some information on how to perform common tasks.
