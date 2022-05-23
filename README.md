@@ -14,6 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - `.editorconfig` settings to standardize charset, ending of lines and indentation
  - `.vscode` settings to sort explorer items by type and to get faster search results
  - `.gitignore` settings to prevent auto-generated files to be committed
+ - Integrated debugger settings for `VS Code`
  - `npm` as Package Manager
 
 
@@ -39,6 +40,10 @@ Below you will find some information on how to perform common tasks.
 2. Install all required packages: `npm install`
 3. Create `.env.local` file in the `env` folder with your own environment variables
 4. Start the application: `npm start`
+
+## Debugging in VS Code
+
+Start debugging in `VS Code` by pressing `F5` or by clicking on `Run and Debug` > `Green debug icon`. You can now set breakpoints and debug.
 
 ## Available Scripts
 | Command             | Description                                               | Evironment      |
