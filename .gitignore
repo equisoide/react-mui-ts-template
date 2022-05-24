@@ -7,9 +7,6 @@ package-lock.json
 # log
 npm-debug.log*
 
-# environment
-.env.local
-
 # testing
 /coverage
 
