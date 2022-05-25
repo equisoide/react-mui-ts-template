@@ -5,11 +5,11 @@ This template is intended to help you start a new `React SPA` project from scrat
 ## Core Libraries
  - [React 18.1.0](https://reactjs.org) with `React Scripts 5.0.1`
  - [MUI 5.6.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
- - [TypeScript 4.6.4](https://www.typescriptlang.org) with [`ES6`](https://www.w3schools.com/js/js_es6.asp)
+ - [TypeScript 4.6.4](https://www.typescriptlang.org) with [ES6](https://www.w3schools.com/js/js_es6.asp)
  - [I18next 11.16.9](https://react.i18next.com) for internationalization
 
  ## Documentation Tools
- - [Storybook 6.5.3](https://storybook.js.org) to document `Pages` and `Components`
+ - [Storybook 6.5.3](https://storybook.js.org) to document pages and components
 
  ## Code Quality & Performance
  - [ESLint 8.15.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
@@ -37,7 +37,7 @@ This template is intended to help you start a new `React SPA` project from scrat
    * [NpmIntellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
    * [SortLines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
    * [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-5. Install [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for `Google Chrome`
+5. Install [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for Google Chrome
 
 ## Running & Debugging the application for the first time
 
