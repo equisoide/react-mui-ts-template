@@ -9,7 +9,7 @@ This template is intended to help you start a new `React SPA` project from scrat
  - [I18next 11.16.9](https://react.i18next.com) for internationalization
 
  ## Documentation Tools
- - [Storybook 6.5.3](https://storybook.js.org) to document pages and components
+ - [Storybook 6.5.5](https://storybook.js.org) to document pages and components
 
  ## Code Quality & Performance
  - [ESLint 8.15.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
