@@ -93,6 +93,7 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Documentation & Training
  - [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0/)
+ - [MUI From zero to hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ)
  - [MUI Components](https://mui.com/material-ui/react-autocomplete/)
  - [MUI Templates](https://mui.com/material-ui/getting-started/templates/)
 
