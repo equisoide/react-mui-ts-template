@@ -14,11 +14,11 @@ const initI18n = () => {
     .init({
       resources: {
         en: {
-          translations: { ...resourcesEn }
+          translations: { ...resourcesEn },
         },
         es: {
-          translations: { ...resourcesEs }
-        }
+          translations: { ...resourcesEs },
+        },
       },
       fallbackLng: 'en',
       debug: false,
@@ -26,8 +26,8 @@ const initI18n = () => {
       defaultNS: 'translations',
       keySeparator: false,
       interpolation: {
-        escapeValue: false
-      }
+        escapeValue: false,
+      },
     });
 };
 

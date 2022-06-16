@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
-import App from './app';
+
+import HelloWorld from './components/HelloWorld';
 import initI18n from './lang';
 import reportWebVitals from './util/report-web-vitals';
 
@@ -8,7 +9,9 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+
 import './styles/site.css';
+import './styles/material-icons.css';
 
 initI18n();
 
@@ -17,8 +20,18 @@ const reactRoot = ReactDOM.createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <App />
-  </StrictMode>
+    <HelloWorld
+      box={{
+        sx: {
+          background: 'rgb(0, 30, 60)',
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        },
+      }}
+    />
+  </StrictMode>,
 );
 
 if (process.env.REACT_APP_ENV !== 'production') {

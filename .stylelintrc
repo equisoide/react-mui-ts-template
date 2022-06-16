@@ -1,8 +1,9 @@
 {
-    "extends": "stylelint-config-standard",
-    "rules": {
-        "declaration-block-trailing-semicolon": "always",
-        "declaration-no-important": true,
-        "indentation": 2
-    }
+  "extends": "stylelint-config-standard",
+  "rules": {
+      "declaration-block-trailing-semicolon": "always",
+      "declaration-no-important": true,
+      "font-family-no-missing-generic-family-keyword": null,
+      "indentation": 2
+  }
 }

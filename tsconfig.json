@@ -1,6 +1,9 @@
 {
+  // Specifies the root files and the compiler options required
+  // to compile the TypeScript project.
+  // Learn more: https://www.typescriptlang.org/tsconfig
   "compilerOptions": {
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -12,14 +15,10 @@
     "moduleResolution": "node",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es6"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src/**/*"]
 }

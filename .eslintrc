@@ -1,23 +1,20 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint",
-    "jest"
-  ],
-  "extends": [
-    "airbnb",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:jest/recommended"
-  ],
+  // EsLint helps to check syntax, find problems, and enforce a code style.
+  // Learn more: https://stylelint.io/user-guide/configure
   "env": {
     "browser": true,
     "es2021": true,
     "jest": true
   },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -25,19 +22,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
-  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
   "rules": {
     "@typescript-eslint/no-empty-function": "off",
-    "camelcase": "error",
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
     "import/extensions": ["error", "ignorePackages", { "js": "never", "jsx": "never", "ts": "never", "tsx": "never" }],
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "jsx-a11y/alt-text": "off",
     "max-len": ["error", { "code": 120, "tabWidth": 2, "ignoreComments": true, "ignoreTrailingComments": true, "ignoreUrls": true, "ignoreStrings": true, "ignoreTemplateLiterals": true, "ignoreRegExpLiterals": true }],
     "no-duplicate-imports": "error",
@@ -52,5 +46,12 @@
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

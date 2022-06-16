@@ -1,27 +1,27 @@
-# React, MUI and TypeScript template
+# React, MUI and TypeScript Template
 
-This template is intended to help you start a new `React SPA` project from scratch with a comprehensive folder structure, required dependencies, built-in configurations, common components and good practices for Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev). Below you will find some information on how to perform common tasks.
+This template is intended to help you start a new `React SPA` project from scratch with a comprehensive folder structure, required dependencies, built-in configurations, example components and good practices for React Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information on how to perform common tasks.
 
 ## Core Libraries
- - [React 18.1.0](https://reactjs.org) with `React Scripts 5.0.1`
- - [MUI 5.6.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Font Icons`
- - [TypeScript 4.6.4](https://www.typescriptlang.org) with [ES6](https://www.w3schools.com/js/js_es6.asp)
- - [I18next 11.16.9](https://react.i18next.com) for internationalization
+- [React 18.1.0](https://reactjs.org) with `React Scripts 5.0.1`
+- [MUI 5.8.2](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Font Icons`
+- [TypeScript 4.7.2](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
+- [I18next 21.8.5](https://react.i18next.com) for internationalization
 
- ## Documentation Tools
- - [Storybook 6.5.5](https://storybook.js.org) to document pages and components
+## Documentation Tools
+- [Storybook 6.5.6](https://storybook.js.org) to document pages and components
 
- ## Code Quality & Performance
- - [ESLint 8.15.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
- - [Stylelint 14.8.2](https://stylelint.io) to analyse `CSS` files
- - [Jest 27.5.0](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
- - [React Testing Library 13.2.0](https://testing-library.com/docs/react-testing-library/intro) to test components
- - [Web Vitals 2.1.4](https://web.dev/vitals) to meassure performance
+## Code Quality & Performance
+- [ESLint 8.16.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [Stylelint 14.8.5](https://stylelint.io) to analyse `CSS` files
+- [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
+- [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
+- [Web Vitals 2.1.4](https://web.dev/vitals) to meassure performance
 
 ## Built-in Settings
- - [.editorconfig](https://editorconfig.org) settings to standardize charset, ending of lines and indentation
- - [.vscode](https://code.visualstudio.com/docs/getstarted/settings) settings with integrated `Chrome Debugger`, faster search results and auto-format on save
- - [Environment files](https://create-react-app.dev/docs/adding-custom-environment-variables) for `local`, `test`, `development`, `qa`, `staging` and `production`
+- [.editorconfig](https://editorconfig.org) settings to standardize charset, ending of lines and indentation
+- [.vscode](https://code.visualstudio.com/docs/getstarted/settings) settings with integrated `Chrome Debugger`, faster search results and auto-format on save
+- [Environment files](https://create-react-app.dev/docs/adding-custom-environment-variables) for `local`, `test`, `development`, `qa`, `staging` and `production`
 
 ## Environment Quick Setup
 
@@ -41,67 +41,90 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Running & Debugging the application for the first time
 
-1. Clone repo: `git clone https://github.com/equisoide/react-mui-ts-template.git`
-2. Install all required packages: `npm ci` ([Clean install](https://docs.npmjs.com/cli/v8/commands/npm-ci))
-3. Start the application: `npm start`
+1. Clone repo:
+   > `git clone https://github.com/equisoide/react-mui-ts-template.git`
+2. Install all required packages (It will perform a [Clean install](https://docs.npmjs.com/cli/v8/commands/npm-ci)):
+   > `npm run init`
+3. Start the application:
+   > `npm start`
 4. Start debugging in `VS Code` by pressing `F5` or by clicking on `Run and Debug` > `Green debug icon`
 5. You can now set breakpoints, debug and inspect the React component hierarchies into the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 ## Available Scripts
-| Command             | Description                                                 | Evironment      |
-| :---                | :---                                                        | :---            |
-| `npm install`       | Installs all packages required for this project             | N/A             |
-| `npm run build:dev` | Builds the app for `development` to the `build` folder      | env.development |
-| `npm run build:loc` | Builds the app for `local` to the `build` folder            | env.local       |
-| `npm run build:qa`  | Builds the app for `qa` to the `build` folder               | env.qa          |
-| `npm run build:sbk` | Builds `Storybook` as a Static Web Application              | N/A             |
-| `npm run build:stg` | Builds the app for `staging` to the `build` folder          | env.staging     |
-| `npm run build`     | Builds the app for `production` to the `build` folder       | env.production  |
-| `npm run lint:fix`  | Try to fix `JavaSript`/`TypeScript` errors                  | N/A             |
-| `npm run lint`      | Analyses `JavaSript`/`TypeScript` code for potential errors | N/A             |
-| `npm run storybook` | Runs `Storybook` in http://localhost:3001                   | N/A             |
-| `npm run stylelint` | Analyses `CSS` files for potential errors                   | N/A             |
-| `npm start`         | Runs the app in http://localhost:3000                       | env.local       |
-| `npm test`          | Launches the test runner                                    | env.test        |
+| Command           | Description                                      | Evironment File  |
+| :---              | :---                                             | :---             |
+| `npm run init`    | Installs all dependencies for the first time     | N/A              |
+| `npm run lint`    | Analyses `JavaSript`/`TypeScript` code           | N/A              |
+| `npm run lint:f`  | Try to fix `JavaSript`/`TypeScript` errors       | N/A              |
+| `npm run lint:c`  | Analyses `CSS` files for potential errors        | N/A              |
+| `npm test`        | Executes Unit Tests outputting to `out/coverage` | .env.test        |
+| `npm start`       | Runs the App in http://localhost:3000            | .env.local       |
+| `npm run build`   | Builds the App to `out/build/production`         | .env.production  |
+| `npm run build:d` | Builds the App to `out/build/development`        | .env.development |
+| `npm run build:l` | Builds the App to `out/build/local`              | .env.local       |
+| `npm run build:q` | Builds the App to `out/build/qa`                 | .env.qa          |
+| `npm run build:s` | Builds the App to `out/build/staging`            | .env.staging     |
+| `npm run sbook`   | Runs Storybook in http://localhost:3001          | .env.local       |
+| `npm run sbook:d` | Builds Storybook to `out/storybook/development`  | .env.development |
+| `npm run sbook:l` | Builds Storybook to `out/storybook/local`        | .env.local       |
+| `npm run sbook:p` | Builds Storybook to `out/storybook/production`   | .env.production  |
+| `npm run sbook:q` | Builds Storybook to `out/storybook/qa`           | .env.qa          |
+| `npm run sbook:s` | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
 ## Working guidelines
- - Create reusable components inside `src/components` folder. Define each component in its own folder with the following structure:
-   ```js
+- Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
+- Create reusable components inside `src/components` folder. Define each component in its own folder with the following structure:
+  ```js
     + src/components/MyComponent  // Component name in PascalCase
       - index.stories.tsx         // Storybook documentation
       - index.test.tsx            // Jest testing file
       - index.tsx                 // Component definition
-   ```
- - Prefer [Function Components](https://www.robinwieruch.de/react-function-component/) over `Class components` they offer almost the same: `state` and `lifecycle methods`, with the plus they are more lightway, have a sophisticated `API` and require less code. With the introduction of `React Hooks` it's possible to write your entire application with just functions as `React components`:
-   ```js
-    function MyComponent() {
+  ```
+- Prefer [Function Components](https://www.robinwieruch.de/react-function-component/) over `Class components` they offer almost the same: `state` and `lifecycle methods`, with the plus they are more lightway, have a sophisticated `API` and require less code. With the introduction of `React Hooks` it's possible to write your entire application with just functions as `React components`:
+    ```js
+    import { Box, BoxProps } from '@mui/material';
+    import { useTranslation } from 'react-i18next';
+
+    export interface MyComponentProps {
+      box?: BoxProps
+    }
+
+    function MyComponent({ box } : MyComponentProps) {
+      const { t } = useTranslation();
+      const boxProps = { ...MyComponent.defaultProps.box, ...box } as BoxProps;
       return (
-        <b>{t('hello_world')}</b> // Always use i18n for texts
+        <Box {...boxProps}>
+          {t('hello-world')}
+        </Box>
       );
     }
 
-    export default MyComponent;   // Prefer default export
-   ```
- - Add your own environment variables to the `env/.env.local` file, this file should not be commited
- - Never let carrets on package versions. Incorrect: `"react": "^18.1.0"`, Correct: `"react": "18.1.0"`
- - Before running or building this application always run linters and unit tests
- - Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
-   ```shell
-   git config --global core.autocrlf false
-   git config --global core.eol lf
-   ```
+    MyComponent.defaultProps = {
+      box: {
+        sx: { background: 'blue' },
+      },
+    };
+
+    export default MyComponent;
+    ```
+- In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
+- Add your own environment variables to the `.env-override/.env.local` file, this file should not be commited
+- Before running or building this application always run linters and unit tests
+- Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
+  ```shell
+  git config --global core.autocrlf false
+  git config --global core.eol lf
+  ```
 
 ## Documentation & Training
- - [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0/)
- - [MUI From zero to hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ)
- - [MUI Components](https://mui.com/material-ui/react-autocomplete/)
- - [MUI Templates](https://mui.com/material-ui/getting-started/templates/)
-
- ## Tutorials that helped me to create this project
- - [Creating a React App from scratch 2022](https://haithai91.medium.com/creating-a-react-app-from-scratch-2022-3a66788d66f9)
- - [MUI Installation](https://mui.com/material-ui/getting-started/installation/)
- - [How to Implement localization in React i18next 2022](https://www.ultimateakash.com/blog-details/IixDOGAKYAo=/How-to-Implement-localization-in-React-i18next-2022)
- - [env-cmd: Load environment variables from an .env file](https://github.com/toddbluhm/env-cmd)
+- [Official React Documentation](https://es.reactjs.org)
+- [React Function Components](https://www.robinwieruch.de/react-function-component)
+- [TypeScript](https://www.typescriptlang.org)
+- [ES6](http://es6-features.org/#Constants)
+- [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0)
+- [MUI From zero to hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ)
+- [MUI Components](https://mui.com/material-ui/react-autocomplete)
+- [MUI Templates](https://mui.com/material-ui/getting-started/templates)
 
 ## Creator
 
