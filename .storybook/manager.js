@@ -3,7 +3,7 @@
 // Learn more: https://storybook.js.org/blog/declarative-storybook-configuration/
 import favicon from './favicon.svg';
 
-// How to change Storybook Favicon
+// Change Storybook Favicon.
 // Ref: https://github.com/storybookjs/storybook/issues/6155
 const injectFavicon = () => {
   const link = document.createElement('link');
