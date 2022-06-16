@@ -108,7 +108,7 @@ This template is intended to help you start a new `React SPA` project from scrat
 
     export default MyComponent;
     ```
-- In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
+- In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (Except on `JSON` files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
 - Add your own environment variables to the `.env-override/.env.local` file, this file should not be commited
 - Before running or building this application always run linters and unit tests
 - Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
