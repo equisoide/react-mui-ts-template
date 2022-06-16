@@ -3,7 +3,7 @@
 This template is intended to help you start a new `React SPA` project from scratch with a comprehensive folder structure, required dependencies, built-in configurations, example components and good practices for React Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information on how to perform common tasks.
 
 ## Supported Language Features
-   This project supports a superset of the latest **JavaScript** standard. In addition to **ES6** syntax features, it also supports:
+   This project supports a superset of the latest **JavaScript** standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
    - [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
    - [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
    - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
