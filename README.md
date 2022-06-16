@@ -7,7 +7,7 @@ This template is intended to help you start a new `React SPA` project from scrat
    - [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
    - [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
    - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
-   - [Dynamic import()](https://github.com/tc39/proposal-object-rest-spread) (stage 4 proposal)
+   - [Dynamic import()](https://github.com/tc39/proposal-dynamic-import) (stage 4 proposal)
    - [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
    - [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) and [TypeScript](https://www.typescriptlang.org)
 
