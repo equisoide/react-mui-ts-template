@@ -45,10 +45,11 @@ This template is intended to help you start a new `React SPA` project from scrat
    > `git clone https://github.com/equisoide/react-mui-ts-template.git`
 2. Install all required packages (It will perform a [Clean install](https://docs.npmjs.com/cli/v8/commands/npm-ci)):
    > `npm run init`
-3. Start the application:
+3. Restart VS Code in order to refresh **TypeScript Intellisense**, otherwise you might see TypeScript errors in the editor
+4. Start the application:
    > `npm start`
-4. Start debugging in `VS Code` by pressing `F5` or by clicking on `Run and Debug` > `Green debug icon`
-5. You can now set breakpoints, debug and inspect the React component hierarchies into the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+5. Start debugging in `VS Code` by pressing `F5` or by clicking on `Run and Debug` > `Green debug icon`
+6. You can now set breakpoints, debug and inspect the React component hierarchies into the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 ## Available Scripts
 | Command           | Description                                      | Evironment File  |
