@@ -3,7 +3,6 @@
 This template is intended to help you start a new `React SPA` project from scratch with a comprehensive folder structure, required dependencies, built-in configurations, example components and good practices for React Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information on how to perform common tasks.
 
 ## Core Libraries
-## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
 - [MUI 5.8.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Font Icons`
 - [TypeScript 4.7.3](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
