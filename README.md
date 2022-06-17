@@ -34,10 +34,10 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Environment Quick Setup
 
-1. Install [NodeJs](https://nodejs.org/es/download/)
+1. Install [NodeJs](https://nodejs.org/es/download)
 2. Install [Git](https://git-scm.com/downloads)
 3. Install [VS Code](https://code.visualstudio.com/download)
-4. Install VS Code useful extensions:
+4. Install VS Code recomented extensions for this project:
    * [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
    * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
@@ -90,7 +90,7 @@ This template is intended to help you start a new `React SPA` project from scrat
       - index.test.tsx            // Jest testing file
       - index.tsx                 // Component definition
   ```
-- Prefer [Function Components](https://www.robinwieruch.de/react-function-component/) over `Class components` they offer almost the same: `state` and `lifecycle methods`, with the plus they are more lightway, have a sophisticated `API` and require less code. With the introduction of `React Hooks` it's possible to write your entire application with just functions as `React components`:
+- Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over `Class components` they offer almost the same: `state` and `lifecycle methods`, with the plus they are more lightway, have a sophisticated `API` and require less code. With the introduction of `React Hooks` it's possible to write your entire application with just functions as `React components`:
     ```js
     import { Box, BoxProps } from '@mui/material';
     import { useTranslation } from 'react-i18next';

@@ -1,6 +1,6 @@
 // This file allows you to customize how Storybook’s app UI renders.
 // That is, everything outside of the Canvas (preview iframe).
-// Learn more: https://storybook.js.org/blog/declarative-storybook-configuration/
+// Learn more: https://storybook.js.org/blog/declarative-storybook-configuration
 import favicon from './favicon.svg';
 
 // Change Storybook Favicon.
