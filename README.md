@@ -82,13 +82,20 @@ This template is intended to help you start a new `React SPA` project from scrat
 | `npm run sbook:s` | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
 ## Using HTTPS in Development
-You may require the dev server to serve pages over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). One particular case where this could be useful is when making requests to an API server when that API server is itself serving **HTTPS**.
+You may require the dev server to serve pages over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). One particular case where this could be useful is when making requests to an **HTTPS API service**.
 
-To do this, set the `HTTPS` environment variable to `true` in the **.env-override/.env.local** file, then start the dev server as usual with `npm start`.
+To do this, set the `HTTPS` environment variable to `true` in the **.env.local** file, then start the dev server as usual with `npm start`.
 
-Note that the server will use a self-signed certificate, so your web browser will almost definitely display a warning upon accessing the page.
+Note that the server will use a self-signed certificate, so your web browser will display a warning upon accessing the page. To avoid this, you should create a local **Certificate Authority** and an **SSL certificate**, then set the `SSL_CERT_FILE` and `SSL_KEY_FILE` variables defined in **.env.local** to point to those files.
 
-To set a custom certificate, set the `SSL_CRT_FILE` and `SSL_KEY_FILE` environment variables to the path of the certificate and key files.
+A simple way to generate the **SSL Certificate** is by using [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
+  - You need a package manager to install **mkcert**:
+    - **MacOS**: Use Homebrew or Macports
+    - **Linux**: Use Certutil
+    - **Windows**: Use Chocolatey
+  - Install **mkcert**
+  - Create a locally trusted CA with `mkcert -install`
+  - Generate an SSL certificate with `mkcert localhost`
 
 ## Working guidelines
 - Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
