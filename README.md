@@ -88,7 +88,7 @@ Note that the server will use a self-signed certificate, so your web browser wil
 
 A simple way to generate the **SSL Certificate** is by using [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
   - You need a package manager to install **mkcert**:
-    - **MacOS**: Use Homebrew or Macports
+    - **MacOS**: Use Homebrew (`brew install mkcert`)
     - **Linux**: Use Certutil
     - **Windows**: Use Chocolatey
   - Install **mkcert**
