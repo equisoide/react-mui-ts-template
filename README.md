@@ -13,7 +13,7 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
-- [MUI 5.8.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Font Icons`
+- [MUI 5.8.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Material Icons`
 - [TypeScript 4.7.3](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
 - [I18next 21.8.9](https://react.i18next.com) for internationalization
 
