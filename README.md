@@ -81,6 +81,47 @@ This template is intended to help you start a new `React SPA` project from scrat
 | `npm run sbook:q` | Builds Storybook to `out/storybook/qa`           | .env.qa          |
 | `npm run sbook:s` | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
+## Project Structure
+```js
+📦 my-app
+├── 📜 .env           // Global variables common to all environments
+├── 📜 .eslintrc      // ESLint configuration
+├── 📜 .gitignore     // Folders and files ignored by Git
+├── 📜 .stylelintrc   // Stylelint configuration
+├── 📜 package.json   // Project dependencies, scripts and more
+├── 📜 tsconfig.json  // TypeScript configuration
+├── 📜 README.md      // Project documentation
+├── 📂 .env-override
+│   ├── 📜 .env.development // Environment variables for Development
+│   ├── 📜 .env.local       // Environment variables for Local
+│   ├── 📜 .env.production  // Environment variables for Production
+│   ├── 📜 .env.qa          // Environment variables for QA
+│   ├── 📜 .env.staging     // Environment variables for Staging
+│   └── 📜 .env.test        // Environment variables for Unit Test
+├── 📂 public
+│   ├── 📜 index.html       // HTML where the React App is rendered
+│   ├── 📜 favicon.ico      // The icon found in the URL address bar
+│   ├── 📜 manifest.json    // Metadata used to install the PWA
+│   ├── 📜 logo192.png      // PWA icon (192x192)
+│   ├── 📜 logo512.png      // PWA icon (512x512)
+│   └── 📜 robots.txt       // Instructions for search crawlers
+└── 📂 src
+    ├── 📜 index.tsx
+    ├── 📂 components
+    │   └── HelloWorld
+    │       ├── 📜 index.stories.tsx
+    │       ├── 📜 index.test.tsx
+    │       └── 📜 index.tsx
+    ├── 📂 lang
+    │   ├── 📜 resources.en.json
+    │   └── 📜 resources.es.json
+    ├── 📂 styles
+    │   ├── 📜 material-icons.css
+    │   └── 📜 site.css
+    └── 📂 util
+        └── 📜 report-web-vitals.ts
+```
+
 ## Using HTTPS in Development
 You may require the dev server to serve pages over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). To do this, set the `HTTPS` environment variable to `true` in the **.env.local** file, then start the dev server as usual with `npm start`.
 
