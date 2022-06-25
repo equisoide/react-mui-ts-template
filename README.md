@@ -92,7 +92,7 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Project Structure
 ```js
-📦 my-app
+📦 react-mui-ts-template
 ├── 📜 .env           // Global variables common to all environments
 ├── 📜 .eslintrc      // ESLint configuration
 ├── 📜 .gitignore     // Folders and files ignored by Git
@@ -110,7 +110,7 @@ This template is intended to help you start a new `React SPA` project from scrat
 ├── 📂 public
 │   ├── 📜 index.html       // HTML where the React App is rendered
 │   ├── 📜 favicon.ico      // The icon found in the URL address bar
-│   ├── 📜 manifest.json    // Metadata used to install the PWA
+│   ├── 📜 manifest.json    // Metadata to install the App as a PWA
 │   ├── 📜 logo192.png      // PWA icon (192x192)
 │   ├── 📜 logo512.png      // PWA icon (512x512)
 │   └── 📜 robots.txt       // Instructions for search crawlers
@@ -141,9 +141,9 @@ A simple way to generate the **SSL Certificate** is by using [mkcert](https://ww
     - **MacOS**: Use Homebrew (`brew install mkcert`)
     - **Linux**: Use Certutil
     - **Windows**: Use Chocolatey
-  - Install **mkcert**
-  - Create a locally trusted CA with `mkcert -install`
-  - Generate an SSL certificate with `mkcert localhost`
+  - Once installed **mkcert**:
+    - Create a locally trusted CA with `mkcert -install`
+    - Generate an SSL certificate with `mkcert localhost`
 
 ## Working guidelines
 - Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
