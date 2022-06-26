@@ -153,9 +153,11 @@ This project supports a superset of the latest **JavaScript** standard. In addit
 | `npm run sb-build:s`  | Builds Storybook to **out/storybook/staging**      | .env.staging     |
 
 ## Using HTTPS in Local Environment
-You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). To do this, use `npm run start-https` or `npm run sbook-https` respectively.
+You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
+  - Use `npm run start-https` to run the APP over HTTPS
+  - Use `npm run sbook-https` to run Storybook over HTTPS
 
-Note that you might get an error in the console telling that the **localhost.pem** or the **localhost-key.pem** files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
+Note that you might get an error in the console telling that **localhost.pem** or **localhost-key.pem** files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
 
 To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
 - You need a package manager to install **mkcert**:
@@ -166,6 +168,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   - Open a terminal at the root of the project
   - Create a locally trusted CA with `mkcert -install`
   - Generate an SSL certificate with `mkcert localhost`
+  - **localhost.pem** and **localhost-key.pem** files will be generated at the root of the project. Note that these files are included in the **.gitignore** and should not be committed. Each developer must generate their own certificates.
 
 ## Working Guidelines
 - Never delete and re-generate the **package-lock.json** file from scratch, it will break the App and Storybook! Let npm update that file every time you install a new dependency
