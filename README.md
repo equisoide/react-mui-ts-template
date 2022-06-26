@@ -130,37 +130,40 @@ This project supports a superset of the latest **JavaScript** standard. In addit
 ```
 
 ## Available Scripts
-| Command           | Description                                        | Evironment File  |
-| :---              | :---                                               | :---             |
-| `npm run init`    | Installs project dependencies for the first time   | N/A              |
-| `npm run lint`    | Analyses **JavaSript**/**TypeScript** code         | N/A              |
-| `npm run lint:f`  | Try to fix **JavaSript**/**TypeScript** errors     | N/A              |
-| `npm run lint:c`  | Analyses **CSS** files for potential errors        | N/A              |
-| `npm test`        | Executes Unit Tests outputting to **out/coverage** | .env.test        |
-| `npm start`       | Runs the App in http://localhost:3000              | .env.local       |
-| `npm run build`   | Builds the App to **out/build/production**         | .env.production  |
-| `npm run build:d` | Builds the App to **out/build/development**        | .env.development |
-| `npm run build:l` | Builds the App to **out/build/local**              | .env.local       |
-| `npm run build:q` | Builds the App to **out/build/qa**                 | .env.qa          |
-| `npm run build:s` | Builds the App to **out/build/staging**            | .env.staging     |
-| `npm run sbook`   | Runs Storybook in http://localhost:3001            | .env.local       |
-| `npm run sbook:d` | Builds Storybook to **out/storybook/development**  | .env.development |
-| `npm run sbook:l` | Builds Storybook to **out/storybook/local**        | .env.local       |
-| `npm run sbook:p` | Builds Storybook to **out/storybook/production**   | .env.production  |
-| `npm run sbook:q` | Builds Storybook to **out/storybook/qa**           | .env.qa          |
-| `npm run sbook:s` | Builds Storybook to **out/storybook/staging**      | .env.staging     |
+| Command               | Description                                        | Evironment File  |
+| :---                  | :---                                               | :---             |
+| `npm run init`        | Installs project dependencies for the first time   | N/A              |
+| `npm run lint`        | Analyses **JavaSript**/**TypeScript** code         | N/A              |
+| `npm run lint:f`      | Try to fix **JavaSript**/**TypeScript** errors     | N/A              |
+| `npm run lint:c`      | Analyses **CSS** files for potential errors        | N/A              |
+| `npm test`            | Executes Unit Tests outputting to **out/coverage** | .env.test        |
+| `npm start`           | Runs the App in http://localhost:3000              | .env.local       |
+| `npm run start-https` | Runs the App in https://localhost:3000             | .env.local       |
+| `npm run build`       | Builds the App to **out/build/production**         | .env.production  |
+| `npm run build:d`     | Builds the App to **out/build/development**        | .env.development |
+| `npm run build:l`     | Builds the App to **out/build/local**              | .env.local       |
+| `npm run build:q`     | Builds the App to **out/build/qa**                 | .env.qa          |
+| `npm run build:s`     | Builds the App to **out/build/staging**            | .env.staging     |
+| `npm run sbook`       | Runs Storybook in http://localhost:3001            | .env.local       |
+| `npm run sbook-https` | Runs Storybook in https://localhost:3001           | .env.local       |
+| `npm run sb-build:d`  | Builds Storybook to **out/storybook/development**  | .env.development |
+| `npm run sb-build:l`  | Builds Storybook to **out/storybook/local**        | .env.local       |
+| `npm run sb-build:p`  | Builds Storybook to **out/storybook/production**   | .env.production  |
+| `npm run sb-build:q`  | Builds Storybook to **out/storybook/qa**           | .env.qa          |
+| `npm run sb-build:s`  | Builds Storybook to **out/storybook/staging**      | .env.staging     |
 
-## Using HTTPS in Development
-You may require the dev server to serve pages over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). To do this, set the `HTTPS` environment variable to `true` in the **.env.local** file, then start the dev server as usual with `npm start`.
+## Using HTTPS in Local Environment
+You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). To do this, use `npm run start-https` or `npm run sbook-https` respectively.
 
-Note that the server will use a self-signed certificate, so your web browser will display a warning upon accessing the page. To avoid this, you should create a local **Certificate Authority** and an **SSL certificate**, then set the `SSL_CERT_FILE` and `SSL_KEY_FILE` variables defined in **.env.local** to point to those files.
+Note that you might get an error in the console telling that the **localhost.pem** or the **localhost-key.pem** files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
 
-A simple way to generate the **SSL Certificate** is by using [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
+To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
 - You need a package manager to install **mkcert**:
   - **MacOS**: Use Homebrew (`brew install mkcert`)
   - **Linux**: Use Certutil
   - **Windows**: Use Chocolatey
 - Once installed **mkcert**:
+  - Open a terminal at the root of the project
   - Create a locally trusted CA with `mkcert -install`
   - Generate an SSL certificate with `mkcert localhost`
 
