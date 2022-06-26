@@ -5,7 +5,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "explorer.sortOrder": "type",
   "files.eol": "\n",
   "search.exclude": {
     "node_modules": true,
