@@ -69,6 +69,66 @@ This template is intended to help you start a new `React SPA` project from scrat
 8. Start debugging in **VS Code** by pressing `F5` or by clicking on `Run and Debug` > `Green debug icon`
 9. You can now set breakpoints, debug and inspect the React component hierarchies into the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
+## Project Structure
+```
+📦 react-mui-ts-template
+├── 📜 .editorconfig              EditorConfig settings
+├── 📜 .env                       Variables common to all environments
+├── 📜 .eslintignore              Folders and files ignored by ESLint
+├── 📜 .eslintrc                  ESLint configuration
+├── 📜 .gitignore                 Folders and files ignored by Git
+├── 📜 .stylelintrc               Stylelint configuration
+├── 📜 LICENSE                    License information
+├── 📜 package-lock.json          Npm dependency tree to recreate node_modules
+├── 📜 package.json               Project dependencies, scripts and more
+├── 📜 README.md                  Project documentation
+├── 📜 tsconfig.json              TypeScript configuration
+├── 📂 .env-override
+│   ├── 📜 .env.development       Environment variables for Development
+│   ├── 📜 .env.local             Environment variables for Local
+│   ├── 📜 .env.production        Environment variables for Production
+│   ├── 📜 .env.qa                Environment variables for QA
+│   ├── 📜 .env.staging           Environment variables for Staging
+│   └── 📜 .env.test              Environment variables for Unit Test
+├── 📂 .storybook
+│   ├── 📜 favicon.svg            Favicon for Storybook
+│   ├── 📜 main.js                Storybook server behavior
+│   ├── 📜 manager.js             Customize how Storybook App renders
+│   └── 📜 preview.js             Global code that applies to all stories
+├── 📂 .vscode
+│   ├── 📜 extensions.json        Recomended extensions to load in VS Code
+│   ├── 📜 launch.json            Launch Chrome against localhost
+│   └── 📜 settings.json          Settings for VS Code
+├── 📂 public
+│   ├── 📜 favicon.ico            The icon found in the URL address bar
+│   ├── 📜 index.html             HTML where the React App is rendered
+│   ├── 📜 logo192.png            PWA icon (192x192)
+│   ├── 📜 logo512.png            PWA icon (512x512)
+│   ├── 📜 manifest.json          Metadata to install the App as a PWA
+│   └── 📜 robots.txt             Instructions for search crawlers
+└── 📂 src
+    ├── 📜 index.tsx              The application entry point
+    ├── 📜 react-app-env.d.ts     TypeScript declarations for React App
+    ├── 📜 setupTests.ts          Global setup before running tests
+    ├── 📂 components/HelloWorld
+    │   ├── 📜 index.stories.tsx  Storybook component documentation
+    │   ├── 📜 index.test.tsx     Component testing file
+    │   └── 📜 index.tsx          Example component definition
+    ├── 📂 fonts
+    │   └── 📜 material-icons.ttf Font file for Material Icons
+    ├── 📂 lang
+    │   ├── 📜 index.ts           i18next configuration
+    │   ├── 📜 resources.en.json  Application texts in English
+    │   └── 📜 resources.es.json  Application texts in Spanish
+    ├── 📂 stories
+    │   └── ...                   Files for the Storybook intro page
+    ├── 📂 styles
+    │   ├── 📜 material-icons.css CSS file for Material Icons
+    │   └── 📜 site.css           CSS file for the application
+    └── 📂 util
+        └── 📜 web-vitals.ts      Web Vitals reporting
+```
+
 ## Available Scripts
 | Command           | Description                                      | Evironment File  |
 | :---              | :---                                             | :---             |
@@ -90,47 +150,6 @@ This template is intended to help you start a new `React SPA` project from scrat
 | `npm run sbook:q` | Builds Storybook to `out/storybook/qa`           | .env.qa          |
 | `npm run sbook:s` | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
-## Project Structure
-```js
-📦 react-mui-ts-template
-├── 📜 .env           // Global variables common to all environments
-├── 📜 .eslintrc      // ESLint configuration
-├── 📜 .gitignore     // Folders and files ignored by Git
-├── 📜 .stylelintrc   // Stylelint configuration
-├── 📜 package.json   // Project dependencies, scripts and more
-├── 📜 tsconfig.json  // TypeScript configuration
-├── 📜 README.md      // Project documentation
-├── 📂 .env-override
-│   ├── 📜 .env.development // Environment variables for Development
-│   ├── 📜 .env.local       // Environment variables for Local
-│   ├── 📜 .env.production  // Environment variables for Production
-│   ├── 📜 .env.qa          // Environment variables for QA
-│   ├── 📜 .env.staging     // Environment variables for Staging
-│   └── 📜 .env.test        // Environment variables for Unit Test
-├── 📂 public
-│   ├── 📜 index.html       // HTML where the React App is rendered
-│   ├── 📜 favicon.ico      // The icon found in the URL address bar
-│   ├── 📜 manifest.json    // Metadata to install the App as a PWA
-│   ├── 📜 logo192.png      // PWA icon (192x192)
-│   ├── 📜 logo512.png      // PWA icon (512x512)
-│   └── 📜 robots.txt       // Instructions for search crawlers
-└── 📂 src
-    ├── 📜 index.tsx
-    ├── 📂 components
-    │   └── HelloWorld
-    │       ├── 📜 index.stories.tsx
-    │       ├── 📜 index.test.tsx
-    │       └── 📜 index.tsx
-    ├── 📂 lang
-    │   ├── 📜 resources.en.json
-    │   └── 📜 resources.es.json
-    ├── 📂 styles
-    │   ├── 📜 material-icons.css
-    │   └── 📜 site.css
-    └── 📂 util
-        └── 📜 report-web-vitals.ts
-```
-
 ## Using HTTPS in Development
 You may require the dev server to serve pages over [HTTPS](https://create-react-app.dev/docs/using-https-in-development). To do this, set the `HTTPS` environment variable to `true` in the **.env.local** file, then start the dev server as usual with `npm start`.
 
@@ -148,11 +167,11 @@ A simple way to generate the **SSL Certificate** is by using [mkcert](https://ww
 ## Working guidelines
 - Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
 - Create reusable components inside `src/components` folder. Define each component in its own folder with the following structure:
-  ```js
-    + src/components/MyComponent  // Component name in PascalCase
-      - index.stories.tsx         // Storybook documentation
-      - index.test.tsx            // Jest testing file
-      - index.tsx                 // Component definition
+  ```
+  ├── 📂 src/components/MyComponent   Component name in PascalCase
+      ├── 📜 index.stories.tsx        Storybook documentation
+      ├── 📜 index.test.tsx           Jest testing file
+      └── 📜 index.tsx                Component definition
   ```
 - Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over `Class components` they offer almost the same: `state` and `lifecycle methods`, with the plus they are more lightway, have a sophisticated `API` and require less code. With the introduction of `React Hooks` it's possible to write your entire application with just functions as `React components`:
     ```js
