@@ -1,15 +1,14 @@
 # React, MUI and TypeScript Template
-
 This template is intended to help you start a new **React SPA** project from scratch with a comprehensive file structure, required dependencies, built-in configurations, example components and good practices for **React Web Development**. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information about features on this template and how to perform common tasks.
 
 ## Supported Language Features
-   This project supports a superset of the latest **JavaScript** standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
-   - [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
-   - [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
-   - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
-   - [Dynamic import()](https://github.com/tc39/proposal-dynamic-import) (stage 4 proposal)
-   - [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
-   - [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) and [TypeScript](https://www.typescriptlang.org)
+This project supports a superset of the latest **JavaScript** standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
+- [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
+- [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
+- [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
+- [Dynamic import()](https://github.com/tc39/proposal-dynamic-import) (stage 4 proposal)
+- [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
+- [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) and [TypeScript](https://www.typescriptlang.org)
 
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with React Scripts 5.0.1
@@ -33,7 +32,6 @@ This template is intended to help you start a new **React SPA** project from scr
 - [Environment files](https://create-react-app.dev/docs/adding-custom-environment-variables) for Local, Test, Development, QA, Staging and Production
 
 ## Environment Quick Setup
-
 1. Install [NodeJs](https://nodejs.org/es/download)
 2. Install [Git](https://git-scm.com/downloads)
 3. Install [VS Code](https://code.visualstudio.com/download)
@@ -158,15 +156,15 @@ You may require the dev server to serve pages over [HTTPS](https://create-react-
 Note that the server will use a self-signed certificate, so your web browser will display a warning upon accessing the page. To avoid this, you should create a local **Certificate Authority** and an **SSL certificate**, then set the `SSL_CERT_FILE` and `SSL_KEY_FILE` variables defined in **.env.local** to point to those files.
 
 A simple way to generate the **SSL Certificate** is by using [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
-  - You need a package manager to install **mkcert**:
-    - **MacOS**: Use Homebrew (`brew install mkcert`)
-    - **Linux**: Use Certutil
-    - **Windows**: Use Chocolatey
-  - Once installed **mkcert**:
-    - Create a locally trusted CA with `mkcert -install`
-    - Generate an SSL certificate with `mkcert localhost`
+- You need a package manager to install **mkcert**:
+  - **MacOS**: Use Homebrew (`brew install mkcert`)
+  - **Linux**: Use Certutil
+  - **Windows**: Use Chocolatey
+- Once installed **mkcert**:
+  - Create a locally trusted CA with `mkcert -install`
+  - Generate an SSL certificate with `mkcert localhost`
 
-## Working guidelines
+## Working Guidelines
 - Never delete and re-generate the **package-lock.json** file from scratch, it will break the App and Storybook! Let npm update that file every time you install a new dependency
 - Create reusable components inside the **src/components** folder. Define each component in its own folder with the following structure:
   ```
@@ -175,33 +173,33 @@ A simple way to generate the **SSL Certificate** is by using [mkcert](https://ww
       ├── 📜 index.test.tsx           Jest testing file
       └── 📜 index.tsx                Component definition
   ```
-- Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over **Class Components**, they offer almost the same: state and lifecycle methods, with the plus they are more lightway, have a sophisticated API and require less code. With the introduction of [React Hooks](https://reactjs.org/docs/hooks-intro.html) it's possible to write your entire application with just functions as React components:
-    ```js
-    import { Box, BoxProps } from '@mui/material';
-    import { useTranslation } from 'react-i18next';
+- Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over **Class Components**, they offer almost the same: state and lifecycle methods, with the plus they are more lightway, have a sophisticated API and require less code. With the introduction of [React Hooks](https://reactjs.org/docs/hooks-intro.html) it's possible to write your entire application with just functions as React Components:
+  ```js
+  import { Box, BoxProps } from '@mui/material';
+  import { useTranslation } from 'react-i18next';
 
-    export interface MyComponentProps {
-      box?: BoxProps
-    }
+  export interface MyComponentProps {
+    box?: BoxProps
+  }
 
-    function MyComponent({ box } : MyComponentProps) {
-      const { t } = useTranslation();
-      const boxProps = { ...MyComponent.defaultProps.box, ...box } as BoxProps;
-      return (
-        <Box {...boxProps}>
-          {t('hello-world')}
-        </Box>
-      );
-    }
+  function MyComponent({ box } : MyComponentProps) {
+    const { t } = useTranslation();
+    const boxProps = { ...MyComponent.defaultProps.box, ...box } as BoxProps;
+    return (
+      <Box {...boxProps}>
+        {t('hello-world')}
+      </Box>
+    );
+  }
 
-    MyComponent.defaultProps = {
-      box: {
-        sx: { background: 'blue' },
-      },
-    };
+  MyComponent.defaultProps = {
+    box: {
+      sx: { background: 'blue' },
+    },
+  };
 
-    export default MyComponent;
-    ```
+  export default MyComponent;
+  ```
 - In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on JSON files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
 - Add your own environment variables to the **.env-override/.env.local** file, this file should not be commited
 - Before running or building this application always run linters and unit tests
@@ -222,9 +220,7 @@ A simple way to generate the **SSL Certificate** is by using [mkcert](https://ww
 - [MUI Templates](https://mui.com/material-ui/getting-started/templates)
 
 ## Creator
+**Juan Cuartas** https://github.com/equisoide
 
-**Juan Cuartas** https://twitter.com/juancuartas
-
-## Copyright and license
-
+## Copyright and License
 Code and documentation released under [the MIT license](https://github.com/equisoide/react-mui-ts-template/blob/master/LICENSE)
