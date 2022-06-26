@@ -13,15 +13,15 @@ This template is intended to help you start a new `React SPA` project from scrat
 
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
-- [MUI 5.8.4](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Material Icons`
-- [TypeScript 4.7.3](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
-- [I18next 21.8.9](https://react.i18next.com) for internationalization
+- [MUI 5.8.5](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Google Material Icons`
+- [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
+- [I18next 21.8.10](https://react.i18next.com) for internationalization
 
 ## Documentation Tools
 - [Storybook 6.5.9](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
-- [ESLint 8.17.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [ESLint 8.18.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
 - [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS` files
 - [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
 - [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
