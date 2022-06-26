@@ -98,7 +98,7 @@
       "!src/**/*.stories.tsx",
       "!src/index.tsx",
       "!src/react-app-env.d.ts",
-      "!src/util/report-web-vitals.ts"
+      "!src/util/web-vitals.ts"
     ]
   },
   "browserslist": {
