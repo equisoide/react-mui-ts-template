@@ -7,21 +7,6 @@
   },
   "explorer.sortOrder": "type",
   "files.eol": "\n",
-  "files.exclude": {
-    ".editorconfig": true,
-    ".eslintignore": true,
-    ".storybook": true,
-    ".vscode": true,
-    "LICENSE": true,
-    "localhost-key.pem": true,
-    "localhost.pem": true,
-    "package-lock.json": true,
-    "src/fonts": true,
-    "src/lang/index.ts": true,
-    "src/react-app-env.d.ts": true,
-    "src/setupTests.ts": true,
-    "src/stories": true
-  },
   "search.exclude": {
     "node_modules": true,
     "out": true,
