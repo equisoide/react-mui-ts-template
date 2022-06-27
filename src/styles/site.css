@@ -10,11 +10,11 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 100%; /* 1rem = 16px */
 }
 
 body {
-  font-size: 1.6rem; /* 16px */
+  font-size: 1rem; /* 16px */
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
