@@ -1,8 +1,8 @@
 # React, MUI and TypeScript Template
-This template is intended to help you start a new **React SPA** project from scratch with a comprehensive file structure, required dependencies, built-in configurations, example components and good practices for **React Web Development**. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information about features on this template and how to perform common tasks.
+This template is intended to help you start a new `React SPA` project from scratch with a comprehensive file structure, required dependencies, built-in configurations, example components and good practices for React Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information about features on this template and how to perform common tasks.
 
 ## Supported Language Features
-This project supports a superset of the latest **JavaScript** standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
+This project supports a superset of the latest `JavaScript` standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
 - [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
 - [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
 - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
@@ -11,8 +11,8 @@ This project supports a superset of the latest **JavaScript** standard. In addit
 - [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) and [TypeScript](https://www.typescriptlang.org)
 
 ## Core Libraries
-- [React 18.2.0](https://reactjs.org) with React Scripts 5.0.1
-- [MUI 5.8.5](https://mui.com) with Emotion styling engine, Roboto Fonts and Material Icons
+- [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
+- [MUI 5.8.5](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
 - [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
 - [I18next 21.8.10](https://react.i18next.com) for internationalization
 
@@ -20,16 +20,16 @@ This project supports a superset of the latest **JavaScript** standard. In addit
 - [Storybook 6.5.9](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
-- [ESLint 8.18.0](https://eslint.org) with Airbnb, TypeScript, React, React Hooks and Jest configuration
-- [Stylelint 14.9.1](https://stylelint.io) to analyse CSS files
-- [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test JavaScript/TypeScript files
+- [ESLint 8.18.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS` files
+- [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
 - [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
 - [Web Vitals 2.1.4](https://web.dev/vitals) to meassure performance
 
 ## Built-in Settings
 - [.editorconfig](https://editorconfig.org) settings to standardize charset, ending of lines and indentation
 - [.vscode](https://code.visualstudio.com/docs/getstarted/settings) settings with integrated Chrome Debugger, faster search results and auto-format on save
-- [Environment files](https://create-react-app.dev/docs/adding-custom-environment-variables) for Local, Test, Development, QA, Staging and Production
+- [Environment files](https://create-react-app.dev/docs/adding-custom-environment-variables) for `Local`, `Test`, `Development`, `QA`, `Staging` and `Production`
 
 ## Environment Quick Setup
 1. Install [NodeJs](https://nodejs.org/es/download)
@@ -48,11 +48,11 @@ This project supports a superset of the latest **JavaScript** standard. In addit
 
 ## Running & Debugging the application for the first time
 1. Open a new [VS Code](https://code.visualstudio.com/download) window:
-   - **File** > **New Window**
-3. Open a parent folder that will host this project (e.g. ~/Projects):
-   - **File** > **Open Folder**
+   - `File` > `New Window`
+3. Open a parent folder that will host this project (e.g. `~/Projects`):
+   - `File` > `Open Folder`
 4. Open a new terminal:
-   - **Terminal** > **New Terminal**
+   - `Terminal` > `New Terminal`
 5. Clone repo:
    - `git clone https://github.com/equisoide/react-mui-ts-template.git`
 6. Install project dependencies:
@@ -66,10 +66,12 @@ This project supports a superset of the latest **JavaScript** standard. In addit
    - Open a new terminal
    - `npm start`
 9. Start debugging in VS Code:
-   - Press `F5` or click on **Run and Debug** > **Green Debug Icon**
+   - Press `F5` or click on `Run and Debug` > `Green Debug Icon`
    - You can set breakpoints and inspect components in the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 ## Project Structure
+After cloning, your project should look like this:
+
 ```
 📦 react-mui-ts-template
 ├── 📜 .editorconfig              EditorConfig settings
@@ -128,36 +130,43 @@ This project supports a superset of the latest **JavaScript** standard. In addit
     └── 📂 util
         └── 📜 web-vitals.ts      Web Vitals reporting
 ```
+For the project to build, these files must exist with exact filenames:
+ - `public/index.html` is the page template
+ - `src/index.tsx` is the TypeScript entry point
+
+ You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by webpack. You need to put any TypeScript and CSS files inside `src`, otherwise webpack won’t see them.
+
+ Only files inside public can be used from `public/index.html`.
 
 ## Available Scripts
-| Command               | Description                                        | Evironment File  |
-| :---                  | :---                                               | :---             |
-| `npm run init`        | Installs project dependencies for the first time   | N/A              |
-| `npm run lint`        | Analyses **JavaSript**/**TypeScript** code         | N/A              |
-| `npm run lint:f`      | Try to fix **JavaSript**/**TypeScript** errors     | N/A              |
-| `npm run lint:c`      | Analyses **CSS** files for potential errors        | N/A              |
-| `npm test`            | Executes Unit Tests outputting to **out/coverage** | .env.test        |
-| `npm start`           | Runs the App in http://localhost:3000              | .env.local       |
-| `npm run start-https` | Runs the App in https://localhost:3000             | .env.local       |
-| `npm run build`       | Builds the App to **out/build/production**         | .env.production  |
-| `npm run build:d`     | Builds the App to **out/build/development**        | .env.development |
-| `npm run build:l`     | Builds the App to **out/build/local**              | .env.local       |
-| `npm run build:q`     | Builds the App to **out/build/qa**                 | .env.qa          |
-| `npm run build:s`     | Builds the App to **out/build/staging**            | .env.staging     |
-| `npm run sbook`       | Runs Storybook in http://localhost:3001            | .env.local       |
-| `npm run sbook-https` | Runs Storybook in https://localhost:3001           | .env.local       |
-| `npm run sb-build:d`  | Builds Storybook to **out/storybook/development**  | .env.development |
-| `npm run sb-build:l`  | Builds Storybook to **out/storybook/local**        | .env.local       |
-| `npm run sb-build:p`  | Builds Storybook to **out/storybook/production**   | .env.production  |
-| `npm run sb-build:q`  | Builds Storybook to **out/storybook/qa**           | .env.qa          |
-| `npm run sb-build:s`  | Builds Storybook to **out/storybook/staging**      | .env.staging     |
+| Command               | Description                                      | Evironment File  |
+| :---                  | :---                                             | :---             |
+| `npm run init`        | Installs project dependencies for the first time | N/A              |
+| `npm run lint`        | Analyses **JavaSript**/**TypeScript** code       | N/A              |
+| `npm run lint:f`      | Try to fix **JavaSript**/**TypeScript** errors   | N/A              |
+| `npm run lint:c`      | Analyses **CSS** files for potential errors      | N/A              |
+| `npm test`            | Executes Unit Tests outputting to `out/coverage` | .env.test        |
+| `npm start`           | Runs the App in http://localhost:3000            | .env.local       |
+| `npm run start-https` | Runs the App in https://localhost:3000           | .env.local       |
+| `npm run build`       | Builds the App to `out/build/production`         | .env.production  |
+| `npm run build:d`     | Builds the App to `out/build/development`        | .env.development |
+| `npm run build:l`     | Builds the App to `out/build/local`              | .env.local       |
+| `npm run build:q`     | Builds the App to `out/build/qa`                 | .env.qa          |
+| `npm run build:s`     | Builds the App to `out/build/staging`            | .env.staging     |
+| `npm run sbook`       | Runs Storybook in http://localhost:3001          | .env.local       |
+| `npm run sbook-https` | Runs Storybook in https://localhost:3001         | .env.local       |
+| `npm run sb-build:d`  | Builds Storybook to `out/storybook/development`  | .env.development |
+| `npm run sb-build:l`  | Builds Storybook to `out/storybook/local`        | .env.local       |
+| `npm run sb-build:p`  | Builds Storybook to `out/storybook/production`   | .env.production  |
+| `npm run sb-build:q`  | Builds Storybook to `out/storybook/qa`           | .env.qa          |
+| `npm run sb-build:s`  | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
   - Use `npm run start-https` to run the APP over HTTPS
   - Use `npm run sbook-https` to run Storybook over HTTPS
 
-Note that you might get an error in the console telling that **localhost.pem** or **localhost-key.pem** files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
+Note that you might get an error in the console telling that `localhost.pem` or `localhost-key.pem` files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
 
 To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-https-ssl-in-localhost-react):
 - You need a package manager to install **mkcert**:
@@ -168,11 +177,12 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   - Open a terminal at the root of the project
   - Create a locally trusted CA with `mkcert -install`
   - Generate an SSL certificate with `mkcert localhost`
-  - **localhost.pem** and **localhost-key.pem** files will be generated at the root of the project. Note that these files are included in the **.gitignore** and should not be committed. Each developer must generate their own certificates.
+  - `localhost.pem` and `localhost-key.pem` will be generated
+  - Note that these files are included in the `.gitignore`
 
 ## Working Guidelines
-- Never delete and re-generate the **package-lock.json** file from scratch, it will break the App and Storybook! Let npm update that file every time you install a new dependency
-- Create reusable components inside the **src/components** folder. Define each component in its own folder with the following structure:
+- Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
+- Create reusable components inside the `src/components` folder. Define each component in its own folder with the following structure:
   ```
   ├── 📂 src/components/MyComponent   Component name in PascalCase
       ├── 📜 index.stories.tsx        Storybook documentation
@@ -206,10 +216,10 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
 
   export default MyComponent;
   ```
-- In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on JSON files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
-- Add your own environment variables to the **.env-override/.env.local** file, this file should not be commited
+- In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on `JSON` files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
+- Add your own environment variables to the `.env-override/.env.local` file, this file should not be commited
 - Before running or building this application always run linters and unit tests
-- Linter is configured to accept valid ending of lines as **LF** (unix style), if you are on Windows, to avoid Git converting from **LF** to **CRLF**, run the following commands:
+- Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
   ```shell
   git config --global core.autocrlf false
   git config --global core.eol lf
