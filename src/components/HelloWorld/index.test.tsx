@@ -1,4 +1,7 @@
+// External imports
 import { render, screen } from '@testing-library/react';
+
+// Local imports
 import HelloWorld from '.';
 
 test('Render HelloWorld Component', () => {
