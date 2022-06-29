@@ -6,7 +6,7 @@ import { AlertProps, BoxProps } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
 // Local imports
-import styles from './index.module.css';
+import styles from './index.module.scss';
 
 // Component props
 export interface HelloWorldProps {

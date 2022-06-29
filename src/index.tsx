@@ -12,8 +12,8 @@ import HelloWorld from './components/HelloWorld';
 import initI18n from './lang';
 import reportWebVitals from './util/web-vitals';
 
-import './styles/site.css';
-import './styles/material-icons.css';
+import './styles/site.scss';
+import './styles/material-icons.scss';
 
 // Global initialization
 initI18n();

@@ -12,8 +12,8 @@ import '@fontsource/roboto/700.css';
 // Local imports
 import initI18n from '../src/lang';
 
-import '../src/styles/site.css';
-import '../src/styles/material-icons.css';
+import '../src/styles/site.scss';
+import '../src/styles/material-icons.scss';
 
 // Global initialization
 initI18n();
