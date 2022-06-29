@@ -1,18 +1,21 @@
+// External imports
 import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
-
-import HelloWorld from './components/HelloWorld';
-import initI18n from './lang';
-import reportWebVitals from './util/web-vitals';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
+// Local imports
+import HelloWorld from './components/HelloWorld';
+import initI18n from './lang';
+import reportWebVitals from './util/web-vitals';
+
 import './styles/site.css';
 import './styles/material-icons.css';
 
+// Global initialization
 initI18n();
 
 const htmlRoot = document.getElementById('root') as HTMLElement;
