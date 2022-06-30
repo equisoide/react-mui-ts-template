@@ -209,29 +209,45 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   ```
 - Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over **Class Components**, they offer almost the same: state and lifecycle methods, with the plus they are more lightway, have a sophisticated API and require less code. With the introduction of [React Hooks](https://reactjs.org/docs/hooks-intro.html) it's possible to write your entire application with just functions as React Components:
   ```js
-  import { Box, BoxProps } from '@mui/material';
+  // External imports
+  import Box from '@mui/material/Box';
+  import { BoxProps } from '@mui/material';
   import { useTranslation } from 'react-i18next';
 
+  // Local imports
+  import styles from './index.module.scss';
+
+  // Component props
   export interface MyComponentProps {
+    /**
+     * The box container styles.
+     * See: https://mui.com/material-ui/api/box
+     */
     box?: BoxProps
   }
 
+  // Component definition
   function MyComponent({ box } : MyComponentProps) {
     const { t } = useTranslation();
-    const boxProps = { ...MyComponent.defaultProps.box, ...box } as BoxProps;
+
+    const defaults = MyComponent.defaultProps;
+    const boxProps = { ...defaults.box, ...box } as BoxProps;
+
     return (
-      <Box {...boxProps}>
+      <Box className={styles.box} {...boxProps}>
         {t('hello-world')}
       </Box>
     );
   }
 
+  // Component default props
   MyComponent.defaultProps = {
     box: {
       sx: { background: 'blue' },
     },
   };
 
+  // Component export
   export default MyComponent;
   ```
 - In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on `JSON` files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
@@ -245,13 +261,14 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
 
 ## More Topics
 - [Configuring Supported Browsers](https://create-react-app.dev/docs/supported-browsers-features#configuring-supported-browsers)
-- [Updating to New Releases](https://create-react-app.dev/docs/updating-to-new-releases)
+- [Updating React to New Releases](https://create-react-app.dev/docs/updating-to-new-releases)
 
 ## Documentation & Training
 - [Official React Documentation](https://es.reactjs.org)
 - [React Function Components](https://www.robinwieruch.de/react-function-component)
 - [TypeScript](https://www.typescriptlang.org)
 - [ES6](http://es6-features.org/#Constants)
+- [Sass Basics](https://sass-lang.com/guide)
 - [MUI Crash Course](https://www.youtube.com/watch?v=o1chMISeTC0)
 - [MUI From Zero to Hero](https://www.youtube.com/playlist?list=PLDxCaNaYIuUlG5ZqoQzFE27CUOoQvOqnQ)
 - [MUI Components](https://mui.com/material-ui/react-autocomplete)
