@@ -82,7 +82,6 @@
     "eject": "react-scripts eject",
     "init": "npm ci --loglevel=error --no-audit --no-fund",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/",
-    "lint:c": "./node_modules/.bin/stylelint \"src/**/*.{css,scss}\"",
     "lint:f": "eslint --fix --ext .js,.jsx,.ts,.tsx src/",
     "sb-build:d": "env-cmd --no-override -f ./.env-override/.env.development build-storybook -s public -o ./out/storybook/development",
     "sb-build:l": "env-cmd --no-override -f ./.env-override/.env.local build-storybook -s public -o ./out/storybook/local",
@@ -91,6 +90,8 @@
     "sb-build:s": "env-cmd --no-override -f ./.env-override/.env.staging build-storybook -s public -o ./out/storybook/staging",
     "sbook": "env-cmd --no-override -f ./.env-override/.env.local start-storybook -p 3001 -s public",
     "sbook-https": "env-cmd --no-override -f ./.env-override/.env.local start-storybook -p 3001 -s public --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "slint": "./node_modules/.bin/stylelint \"src/**/*.{css,scss}\"",
+    "slint:f": "./node_modules/.bin/stylelint --fix \"src/**/*.{css,scss}\"",
     "start": "env-cmd --no-override -f ./.env-override/.env.local react-scripts start",
     "start-https": "HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem env-cmd --no-override -f ./.env-override/.env.local react-scripts start",
     "test": "env-cmd --no-override -f ./.env-override/.env.test react-scripts test --env=jsdom --coverage --coverageDirectory='./out/coverage' --watchAll=false"
