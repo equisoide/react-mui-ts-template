@@ -180,8 +180,8 @@ In development, expressing dependencies this way allows your styles to be reload
 
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
-  - Use `npm run start-https` to run the APP over HTTPS
-  - Use `npm run sbook-https` to run Storybook over HTTPS
+- Use `npm run start-https` to run the APP over HTTPS
+- Use `npm run sbook-https` to run Storybook over HTTPS
 
 Note that you might get an error in the console telling that `localhost.pem` or `localhost-key.pem` files can't be found. This is because when running the App over HTTPS a valid **Certificate Authority** and an **SSL certificate** are needed.
 
