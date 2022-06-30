@@ -2,7 +2,7 @@
 This template is intended to help you start a new `React SPA` project from scratch with a comprehensive file structure, required dependencies, built-in configurations, example components and good practices for React Web Development. The project was bootstrapped with [Create React App](https://create-react-app.dev) following this [Tutorial](https://github.com/equisoide/react-mui-ts-steps). Below you will find some information about features on this template and how to perform common tasks.
 
 ## Supported Language Features
-This project supports a superset of the latest `JavaScript` standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
+This project supports a superset of the latest `JavaScript`/`TypeScript` standard. In addition to [ES6](http://es6-features.org) syntax features, it also supports:
 - [Exponentiation Operator](https://github.com/tc39/proposal-exponentiation-operator) (ES2016)
 - [Async/await](https://github.com/tc39/proposal-async-await) (ES2017)
 - [Object Rest/Spread Properties](https://github.com/tc39/proposal-object-rest-spread) (ES2018)
@@ -12,6 +12,7 @@ This project supports a superset of the latest `JavaScript` standard. In additio
 
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
+- [SASS 1.53.0](https://sass-lang.com) with [CSS Modules](https://github.com/css-modules/css-modules)
 - [MUI 5.8.5](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
 - [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
 - [I18next 21.8.10](https://react.i18next.com) for internationalization
@@ -21,7 +22,7 @@ This project supports a superset of the latest `JavaScript` standard. In additio
 
 ## Code Quality & Performance
 - [ESLint 8.18.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
-- [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS` files
+- [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS`/`SCSS` files
 - [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
 - [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
 - [Web Vitals 2.1.4](https://web.dev/vitals) to meassure performance
@@ -74,67 +75,68 @@ After cloning, your project should look like this:
 
 ```
 📦 react-mui-ts-template
-├── 📜 .editorconfig              EditorConfig settings
-├── 📜 .env                       Variables common to all environments
-├── 📜 .eslintignore              Folders and files ignored by ESLint
-├── 📜 .eslintrc                  ESLint configuration
-├── 📜 .gitignore                 Folders and files ignored by Git
-├── 📜 .stylelintrc               Stylelint configuration
-├── 📜 LICENSE                    License information
-├── 📜 package-lock.json          Npm dependency tree to recreate node_modules
-├── 📜 package.json               Project dependencies, scripts and more
-├── 📜 README.md                  Project documentation
-├── 📜 tsconfig.json              TypeScript configuration
+├── 📜 .editorconfig                EditorConfig settings
+├── 📜 .env                         Variables common to all environments
+├── 📜 .eslintignore                Folders and files ignored by ESLint
+├── 📜 .eslintrc                    ESLint configuration
+├── 📜 .gitignore                   Folders and files ignored by Git
+├── 📜 .stylelintrc                 Stylelint configuration
+├── 📜 LICENSE                      License information
+├── 📜 package-lock.json            Npm dependency tree to recreate node_modules
+├── 📜 package.json                 Project dependencies, scripts and more
+├── 📜 README.md                    Project documentation
+├── 📜 tsconfig.json                TypeScript configuration
 ├── 📂 .env-override
-│   ├── 📜 .env.development       Environment variables for Development
-│   ├── 📜 .env.local             Environment variables for Local
-│   ├── 📜 .env.production        Environment variables for Production
-│   ├── 📜 .env.qa                Environment variables for QA
-│   ├── 📜 .env.staging           Environment variables for Staging
-│   └── 📜 .env.test              Environment variables for Unit Test
+│   ├── 📜 .env.development         Environment variables for Development
+│   ├── 📜 .env.local               Environment variables for Local
+│   ├── 📜 .env.production          Environment variables for Production
+│   ├── 📜 .env.qa                  Environment variables for QA
+│   ├── 📜 .env.staging             Environment variables for Staging
+│   └── 📜 .env.test                Environment variables for Unit Test
 ├── 📂 .storybook
-│   ├── 📜 favicon.svg            Favicon for Storybook
-│   ├── 📜 main.js                Storybook server behavior
-│   ├── 📜 manager.js             Customize how Storybook App renders
-│   └── 📜 preview.js             Global code that applies to all stories
+│   ├── 📜 favicon.svg              Favicon for Storybook
+│   ├── 📜 main.js                  Storybook server behavior
+│   ├── 📜 manager.js               Customize how Storybook App renders
+│   └── 📜 preview.js               Global code that applies to all stories
 ├── 📂 .vscode
-│   ├── 📜 extensions.json        Recomended extensions to load in VS Code
-│   ├── 📜 launch.json            Launch Chrome against localhost
-│   └── 📜 settings.json          Settings for VS Code
+│   ├── 📜 extensions.json          Recomended extensions to load in VS Code
+│   ├── 📜 launch.json              Launch Chrome against localhost
+│   └── 📜 settings.json            Settings for VS Code
 ├── 📂 public
-│   ├── 📜 favicon.ico            The icon found in the URL address bar
-│   ├── 📜 index.html             HTML where the React App is rendered
-│   ├── 📜 logo192.png            PWA icon (192x192)
-│   ├── 📜 logo512.png            PWA icon (512x512)
-│   ├── 📜 manifest.json          Metadata to install the App as a PWA
-│   └── 📜 robots.txt             Instructions for search crawlers
+│   ├── 📜 favicon.ico              The icon found in the URL address bar
+│   ├── 📜 index.html               HTML where the React App is rendered
+│   ├── 📜 logo192.png              PWA icon (192x192)
+│   ├── 📜 logo512.png              PWA icon (512x512)
+│   ├── 📜 manifest.json            Metadata to install the App as a PWA
+│   └── 📜 robots.txt               Instructions for search crawlers
 └── 📂 src
-    ├── 📜 index.tsx              The application entry point
-    ├── 📜 react-app-env.d.ts     TypeScript declarations for React App
-    ├── 📜 setupTests.ts          Global setup before running tests
+    ├── 📜 index.tsx                The application entry point
+    ├── 📜 react-app-env.d.ts       TypeScript declarations for React App
+    ├── 📜 setupTests.ts            Global setup before running tests
     ├── 📂 components/HelloWorld
-    │   ├── 📜 index.stories.tsx  Storybook component documentation
-    │   ├── 📜 index.test.tsx     Component testing file
-    │   └── 📜 index.tsx          Example component definition
+    │   ├── 📜 index.module.scss    Component styles
+    │   ├── 📜 index.stories.tsx    Storybook documentation
+    │   ├── 📜 index.test.tsx       Jest testing file
+    │   └── 📜 index.tsx            Example component definition
     ├── 📂 fonts
-    │   └── 📜 material-icons.ttf Font file for Material Icons
+    │   └── 📜 material-icons.ttf   Font file for Material Icons
     ├── 📂 lang
-    │   ├── 📜 index.ts           i18next configuration
-    │   ├── 📜 resources.en.json  Application texts in English
-    │   └── 📜 resources.es.json  Application texts in Spanish
+    │   ├── 📜 index.ts             i18next configuration
+    │   ├── 📜 resources.en.json    Application texts in English
+    │   └── 📜 resources.es.json    Application texts in Spanish
     ├── 📂 stories
-    │   └── ...                   Files for the Storybook intro page
+    │   └── ...                     Files for the Storybook intro page
     ├── 📂 styles
-    │   ├── 📜 material-icons.css CSS file for Material Icons
-    │   └── 📜 site.css           CSS file for the application
+    │   ├── 📜 material-icons.scss  SASS file for Material Icons
+    │   └── 📜 site.scss            SASS file for the application
     └── 📂 util
-        └── 📜 web-vitals.ts      Web Vitals reporting
+        └── 📜 web-vitals.ts        Web Vitals reporting
 ```
 For the project to build, these files must exist with exact filenames:
  - `public/index.html` is the page template
  - `src/index.tsx` is the TypeScript entry point
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by webpack. You need to put any TypeScript and CSS files inside `src`, otherwise webpack won’t see them.
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by webpack. You need to put any TypeScript and SCSS files inside `src`, otherwise webpack won’t see them.
 
 Only files inside public can be used from `public/index.html`.
 
@@ -144,7 +146,8 @@ Only files inside public can be used from `public/index.html`.
 | `npm run init`        | Installs project dependencies for the first time | N/A              |
 | `npm run lint`        | Analyses **JavaSript**/**TypeScript** code       | N/A              |
 | `npm run lint:f`      | Try to fix **JavaSript**/**TypeScript** errors   | N/A              |
-| `npm run lint:c`      | Analyses **CSS** files for potential errors      | N/A              |
+| `npm run slint`       | Analyses **CSS**/**SCSS** styles                 | N/A              |
+| `npm run slint:f`     | Try to fix **CSS**/**SCSS** errors               | N/A              |
 | `npm test`            | Executes Unit Tests outputting to `out/coverage` | .env.test        |
 | `npm start`           | Runs the App in http://localhost:3000            | .env.local       |
 | `npm run start-https` | Runs the App in https://localhost:3000           | .env.local       |
@@ -160,6 +163,20 @@ Only files inside public can be used from `public/index.html`.
 | `npm run sb-build:p`  | Builds Storybook to `out/storybook/production`   | .env.production  |
 | `npm run sb-build:q`  | Builds Storybook to `out/storybook/qa`           | .env.qa          |
 | `npm run sb-build:s`  | Builds Storybook to `out/storybook/staging`      | .env.staging     |
+
+## Adding a Stylesheet
+This project supports [CSS Modules](https://github.com/css-modules/css-modules) alongside regular stylesheets using the [name].module.css file naming convention. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format [filename]\_[classname]\_\_[hash].
+
+This project setup uses [webpack](https://webpack.js.org) for handling all assets. Webpack offers a custom way of “extending” the concept of `import` beyond JavaScript. To express a dependency to a CSS file, you need to import it:
+```tsx
+import './button.css';
+
+const Button = () => (
+  <button className="button">Click me</button>
+);
+```
+
+In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.
 
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
@@ -185,6 +202,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
 - Create reusable components inside the `src/components` folder. Define each component in its own folder with the following structure:
   ```
   ├── 📂 src/components/MyComponent   Component name in PascalCase
+      ├── 📜 index.module.cs          Component styles
       ├── 📜 index.stories.tsx        Storybook documentation
       ├── 📜 index.test.tsx           Jest testing file
       └── 📜 index.tsx                Component definition
@@ -224,6 +242,10 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   git config --global core.autocrlf false
   git config --global core.eol lf
   ```
+
+## More Topics
+- [Configuring Supported Browsers](https://create-react-app.dev/docs/supported-browsers-features#configuring-supported-browsers)
+- [Updating to New Releases](https://create-react-app.dev/docs/updating-to-new-releases)
 
 ## Documentation & Training
 - [Official React Documentation](https://es.reactjs.org)
