@@ -10,5 +10,9 @@
     "node_modules": true,
     "out": true,
     "package-lock.json": true
-  }
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"]
 }
