@@ -203,7 +203,7 @@ To share variables between **Sass** files, you can use Sass's [@use](https://sas
 }
 ```
 
-So far, the SCSS codebase included in this template is pretty simple. If you are interested in structuring the Sass codebase using the **7-1 Pattern** you can read this [article](https://remote.com/blog/how-to-structure-your-sass-project) or take a look to the following [boilerplate](https://github.com/KittyGiraudel/sass-boilerplate).
+For information about how to structure a SASS codebase using the **7-1 Pattern** you can read this [article](https://remote.com/blog/how-to-structure-your-sass-project) or take a look to the following [boilerplate](https://github.com/KittyGiraudel/sass-boilerplate).
 
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
