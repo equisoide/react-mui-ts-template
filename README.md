@@ -130,14 +130,14 @@ After cloning, your project should look like this:
     │   └── ...                     Files for the Storybook intro page
     ├── 📂 styles
     │   ├── 📜 _material-icons.scss Material Icons Font
-    │   ├── 📜 _reset.css           Simple CSS reset for consistent styles
+    │   ├── 📜 _reset.scss          Simple CSS reset for consistent styles
     │   └── 📜 main.scss            Main SASS file
     └── 📂 util
         └── 📜 web-vitals.ts        Web Vitals reporting
 ```
 For the project to build, these files must exist with exact filenames:
- - `public/index.html` is the page template
- - `src/index.tsx` is the TypeScript entry point
+- `public/index.html` is the page template
+- `src/index.tsx` is the TypeScript entry point
 
 You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by webpack. You need to put any TypeScript and SCSS files inside `src`, otherwise webpack won’t see them.
 
