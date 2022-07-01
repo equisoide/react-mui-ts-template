@@ -189,7 +189,7 @@ function MyComponent() {
 
 In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all `.scss` files will be concatenated into a single minified `.css` file in the build output.
 
-To share variables between **Sass** files, you can use Sass's [@use](https://sass-lang.com/documentation/at-rules/use) rule. There is a `SASS_PATH` variable in the `.env` file that is used to locate `.scss` files. Supposing that `SASS_PATH="./src/styles"` and that you have `_colors.scss` in that directory, then you can import it like this:
+To share variables between **Sass** files, you can use Sass's [@use](https://sass-lang.com/documentation/at-rules/use) rule. There is a `SASS_PATH` variable in the `.env` file that is used to locate `.scss` files. Supposing that `SASS_PATH="./src/styles"` and that you have `_colors.scss` in that directory, then you can use it like this:
 ```scss
 @use 'colors';
 
