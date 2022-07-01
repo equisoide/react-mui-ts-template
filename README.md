@@ -127,8 +127,9 @@ After cloning, your project should look like this:
     ├── 📂 stories
     │   └── ...                     Files for the Storybook intro page
     ├── 📂 styles
-    │   ├── 📜 material-icons.scss  SASS file for Material Icons
-    │   └── 📜 site.scss            SASS file for the application
+    │   ├── 📜 _material-icons.scss Material Icons Font
+    │   ├── 📜 _reset.css           Simple CSS reset for consistent styles
+    │   └── 📜 main.scss            Main SASS file
     └── 📂 util
         └── 📜 web-vitals.ts        Web Vitals reporting
 ```
@@ -165,18 +166,42 @@ Only files inside public can be used from `public/index.html`.
 | `npm run sb-build:s`  | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
 ## Adding a Stylesheet
-This project supports [CSS Modules](https://github.com/css-modules/css-modules) alongside regular stylesheets using the [name].module.css file naming convention. CSS Modules allows the scoping of CSS by automatically creating a unique classname of the format [filename]\_[classname]\_\_[hash].
+This project supports [Sass](https://sass-lang.com/guide) alongside [CSS Modules](https://github.com/css-modules/css-modules) for handling styles:
+- `Sass` is CSS with superpowers
+- `CSS Modules` scopes CSS by automatically creating a unique **className**
 
-This project setup uses [webpack](https://webpack.js.org) for handling all assets. Webpack offers a custom way of “extending” the concept of `import` beyond JavaScript. To express a dependency to a CSS file, you need to import it:
-```tsx
-import './button.css';
+`Sass` supports two syntaxes:
+- `.scss`: Is an extension of CSS, every valid CSS is a valid **.scss** as well
+- `.sass`: Is an older indented syntax not recommended for use in new **Sass** files
 
-const Button = () => (
-  <button className="button">Click me</button>
-);
+In this project we use the `.scss` syntax.
+
+To express that a component depends on a **.scss module**, you should use the `[name].module.scss` convention:
+```jsx
+import styles from './index.module.scss';
+
+function MyComponent() {
+  return <div className={styles.myClass}>My Component</div>;
+}
 ```
 
-In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all CSS files will be concatenated into a single minified `.css` file in the build output.
+In development, expressing dependencies this way allows your styles to be reloaded on the fly as you edit them. In production, all `.scss` files will be concatenated into a single minified `.css` file in the build output.
+
+To share variables between **Sass** files, you can use Sass's [@use](https://sass-lang.com/documentation/at-rules/use) rule:
+```scss
+// There is a SASS_PATH variable in the ".env" file.
+// SASS_PATH is used to resolve SASS imports.
+// Supposing that SASS_PATH="./src/styles" and that
+// file './src/styles/_colors.scss' exists, then
+// you can use it like this:
+@use 'colors';
+
+.info {
+  color: colors.$primary;
+}
+```
+
+So far, the SCSS codebase included in this template is pretty simple. If you are interested in structuring the Sass codebase using the **7-1 Pattern** you can read this [article](https://remote.com/blog/how-to-structure-your-sass-project) or take a look to the following [boilerplate](https://github.com/KittyGiraudel/sass-boilerplate).
 
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
