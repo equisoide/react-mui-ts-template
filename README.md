@@ -173,7 +173,7 @@ This project supports [Sass](https://sass-lang.com/guide) alongside [CSS Modules
 - `CSS Modules` scopes CSS by automatically creating a unique **className**
 
 `Sass` supports two syntaxes:
-- `.scss`: Is an extension of CSS, every valid CSS is a valid **.scss** as well
+- `.scss`: Is an extension of CSS where every valid CSS is a valid **.scss** as well
 - `.sass`: Is an older indented syntax not recommended for use in new **Sass** files
 
 In this project we use the `.scss` syntax.
