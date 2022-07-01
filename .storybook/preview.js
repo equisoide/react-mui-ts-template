@@ -4,16 +4,9 @@
 // External imports
 import { addParameters } from '@storybook/client-api';
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
 // Local imports
 import initI18n from '../src/lang';
-
-import '../src/styles/site.scss';
-import '../src/styles/material-icons.scss';
+import '../src/styles/main.scss';
 
 // Global initialization
 initI18n();
