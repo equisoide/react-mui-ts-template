@@ -284,6 +284,8 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   ```shell
   git config --global core.autocrlf false
   git config --global core.eol lf
+  git rm --cached -r .
+  git reset --hard
   ```
 
 ## More Topics
