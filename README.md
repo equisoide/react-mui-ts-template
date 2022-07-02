@@ -15,9 +15,9 @@ This project supports a superset of the latest `JavaScript`/`TypeScript` standar
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
 - [SASS 1.53.0](https://sass-lang.com) with [CSS Modules](https://github.com/css-modules/css-modules)
-- [MUI 5.8.5](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
+- [MUI 5.8.6](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
 - [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
-- [I18next 21.8.10](https://react.i18next.com) for internationalization
+- [I18next 21.8.11](https://react.i18next.com) for internationalization
 
 ## Documentation Tools
 - [Storybook 6.5.9](https://storybook.js.org) to document components
