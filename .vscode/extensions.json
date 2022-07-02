@@ -6,6 +6,7 @@
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "mikestead.dotenv",
+    "sibiraj-s.vscode-scss-formatter",
     "silvenon.mdx",
     "stylelint.vscode-stylelint",
     "tyriar.sort-lines",
