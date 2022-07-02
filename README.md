@@ -293,7 +293,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
     );
   }
 
-  // Component default props
+  // Default props
   MyComponent.defaultProps = {
     box: {
       sx: { background: 'blue' },

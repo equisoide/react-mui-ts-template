@@ -46,7 +46,7 @@ function HelloWorld({ alert, box } : HelloWorldProps) {
   );
 }
 
-// Component default props
+// Default props
 HelloWorld.defaultProps = {
   alert: {
     severity: 'success',
