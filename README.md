@@ -45,6 +45,7 @@ This project supports a superset of the latest `JavaScript`/`TypeScript` standar
    * [Icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
    * [MDX](https://marketplace.visualstudio.com/items?itemName=silvenon.mdx)
    * [NpmIntellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
+   * [SCSS Formatter](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter)
    * [SortLines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
    * [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 5. Install [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for Google Chrome
