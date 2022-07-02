@@ -286,6 +286,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   // Component export
   export default MyComponent;
   ```
+- Use default `imports` and `exports` when a module only exports a single thing (for example, a component). Named exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.
 - In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on `JSON` files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
 - Add your own environment variables to the `.env-override/.env.local` file, this file should not be commited
 - Before running or building this application always run linters and unit tests
