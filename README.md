@@ -201,6 +201,19 @@ To share variables between **Sass** files, you can use Sass's [@use](https://sas
 
 For information about how to structure a SASS codebase using the **7-1 Pattern** you can read this [article](https://remote.com/blog/how-to-structure-your-sass-project) or take a look to the following [boilerplate](https://github.com/KittyGiraudel/sass-boilerplate).
 
+## Adding Images and Files
+With webpack, using static assets like images and files works similarly to `SCSS`.
+
+To reduce the number of requests to the server, importing images that are less than 10,000 bytes returns a data URI instead of a path. This applies to the following file extensions: bmp, gif, jpg, jpeg, and png. You can control the 10,000 byte threshold by setting the `IMAGE_INLINE_SIZE_LIMIT` environment variable as documented in the [advanced configuration](https://create-react-app.dev/docs/advanced-configuration).
+
+```tsx
+import logo from './logo.png';
+
+function Header() {
+  return <img src={logo} alt="Logo" />;
+}
+```
+
 ## Using HTTPS in Local Environment
 You may require the local server to run the App or Storybook over [HTTPS](https://create-react-app.dev/docs/using-https-in-development):
 - Use `npm run start-https` to run the APP over HTTPS
