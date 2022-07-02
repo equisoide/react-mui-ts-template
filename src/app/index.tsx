@@ -1,4 +1,4 @@
-// Exernal imports
+// External imports
 import HelloWorld from '../components/HelloWorld';
 
 // Component definition
