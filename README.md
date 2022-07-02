@@ -305,13 +305,20 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
 - In general use [Trailing Commas](https://blog.logrocket.com/best-practices-using-trailing-commas-javascript) (except on `JSON` files), many coding styles now recommend using them all the time because they make it easier to add new parameters to your functions or copy/paste properties in arrays and objects and also helps with producing cleaner diff output
 - Add your own environment variables to the `.env-override/.env.local` file, this file should not be commited
 - Before running or building this application always run linters and unit tests
-- Linter is configured to accept valid ending of lines as `LF` (unix style), if you are on Windows, to avoid Git converting from `LF` to `CRLF`, run the following commands:
-  ```shell
-  git config --global core.autocrlf false
-  git config --global core.eol lf
-  git rm --cached -r .
-  git reset --hard
-  ```
+
+## Troubleshooting
+- **When running `npm run lint` you get this error: "Expected linebreaks to be 'LF' but found 'CRLF'"**
+  - This happens because on Windows, Git converts linebreaks from `LF` to `CRLF` when you checkout the code, but esLint is configured to accept valid ending of lines as `LF` (unix style)
+  - To avoid Git converting from `LF` to `CRLF`, run the following commands:
+    ```shell
+    git config --global core.autocrlf false
+    git config --global core.eol lf
+    git rm --cached -r .
+    git reset --hard
+    ```
+- **On VS Code you get this errors: "JSX element implicitly has type 'any'..."**
+  - This is happening because your Typescript IntelliSense is not working properly
+  - To fix it reload your code editor: `Ctrl + p` > `Developer: Reload Window`
 
 ## More Topics
 - [Configuring Supported Browsers](https://create-react-app.dev/docs/supported-browsers-features#configuring-supported-browsers)
