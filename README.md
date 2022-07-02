@@ -12,6 +12,8 @@ This project supports a superset of the latest `JavaScript`/`TypeScript` standar
 - [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal)
 - [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) and [TypeScript](https://www.typescriptlang.org)
 
+Constant enums and namespaces are not supported, you can learn about the constraints of using [Babel with TypeScript here](https://babeljs.io/docs/en/babel-plugin-transform-modules-amd).
+
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
 - [SASS 1.53.0](https://sass-lang.com) with [CSS Modules](https://github.com/css-modules/css-modules)
