@@ -18,5 +18,5 @@ function App() {
   );
 }
 
-// Component export
+// Default export
 export default App;

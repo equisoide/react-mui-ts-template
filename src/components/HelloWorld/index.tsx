@@ -56,5 +56,5 @@ HelloWorld.defaultProps = {
   box: {},
 };
 
-// Component export
+// Default export
 export default HelloWorld;
