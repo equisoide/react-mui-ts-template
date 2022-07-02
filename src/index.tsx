@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { StrictMode } from 'react';
 
 // Local imports
-import HelloWorld from './components/HelloWorld';
+import App from './app';
 import initI18n from './lang';
 import reportWebVitals from './util/web-vitals';
 import './styles/main.scss';
@@ -16,17 +16,7 @@ const reactRoot = ReactDOM.createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <HelloWorld
-      box={{
-        sx: {
-          background: 'rgb(0, 30, 60)',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        },
-      }}
-    />
+    <App />
   </StrictMode>,
 );
 
