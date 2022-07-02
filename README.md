@@ -317,7 +317,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
     git reset --hard
     ```
 - **On VS Code you get this errors: "JSX element implicitly has type 'any'..."**
-  - This is happening because your Typescript IntelliSense is not working properly
+  - This happens because your Typescript IntelliSense is not working properly
   - To fix it reload your code editor: `Ctrl + p` > `Developer: Reload Window`
 
 ## More Topics
