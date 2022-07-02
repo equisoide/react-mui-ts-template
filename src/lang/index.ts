@@ -11,6 +11,7 @@ import { initReactI18next } from 'react-i18next';
 import resourcesEn from './resources.en.json';
 import resourcesEs from './resources.es.json';
 
+// Init the i18next module with the resource files
 const initI18n = () => {
   i18n
     .use(LanguageDetector)
@@ -35,4 +36,5 @@ const initI18n = () => {
     });
 };
 
+// Default export
 export default initI18n;
