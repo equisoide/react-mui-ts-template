@@ -174,9 +174,9 @@ Most of the files you will create in the `src` folder will be of type **TypeScri
 | `npm run build:s`     | Builds the App to `out/build/staging`            | .env.staging     |
 | `npm run sbook`       | Runs Storybook in http://localhost:3001          | .env.local       |
 | `npm run sbook-https` | Runs Storybook in https://localhost:3001         | .env.local       |
+| `npm run sb-build`    | Builds Storybook to `out/storybook/production`   | .env.production  |
 | `npm run sb-build:d`  | Builds Storybook to `out/storybook/development`  | .env.development |
 | `npm run sb-build:l`  | Builds Storybook to `out/storybook/local`        | .env.local       |
-| `npm run sb-build:p`  | Builds Storybook to `out/storybook/production`   | .env.production  |
 | `npm run sb-build:q`  | Builds Storybook to `out/storybook/qa`           | .env.qa          |
 | `npm run sb-build:s`  | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 
