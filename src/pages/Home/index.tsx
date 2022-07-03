@@ -2,7 +2,7 @@
 import HelloWorld from '../../components/HelloWorld';
 
 // Component definition
-function Home() {
+function HomePage() {
   return (
     <HelloWorld
       box={{
@@ -19,4 +19,4 @@ function Home() {
 }
 
 // Default export
-export default Home;
+export default HomePage;
