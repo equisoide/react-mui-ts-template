@@ -197,7 +197,7 @@ This project supports [Sass](https://sass-lang.com/guide) alongside [CSS Modules
 In this project we use the `.scss` syntax.
 
 To express that a component depends on a **.scss module**, you should use the `[name].module.scss` convention:
-```jsx
+```tsx
 import styles from './index.module.scss';
 
 function MyComponent() {
@@ -261,7 +261,7 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
       └── 📜 index.tsx                Component definition
   ```
 - Prefer [Function Components](https://www.robinwieruch.de/react-function-component) over **Class Components**, they offer almost the same: state and lifecycle methods, with the plus they are more lightway, have a sophisticated API and require less code. With the introduction of [React Hooks](https://reactjs.org/docs/hooks-intro.html) it's possible to write your entire application with just functions as React Components:
-  ```js
+  ```tsx
   // External imports
   import Box from '@mui/material/Box';
   import { BoxProps } from '@mui/material';
