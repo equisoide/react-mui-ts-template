@@ -103,6 +103,7 @@
       "src/**/*.tsx",
       "!src/**/*.stories.tsx",
       "!src/index.tsx",
+      "!src/app/index.tsx",
       "!src/react-app-env.d.ts",
       "!src/util/web-vitals.ts"
     ]
