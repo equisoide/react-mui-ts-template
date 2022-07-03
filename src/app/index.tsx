@@ -1,20 +1,16 @@
+// External imports
+import { Routes, Route } from 'react-router-dom';
+
 // Local imports
-import HelloWorld from '../components/HelloWorld';
+import HomePage from '../pages/Home';
 
 // Component definition
 function App() {
   return (
-    <HelloWorld
-      box={{
-        sx: {
-          background: 'rgb(0, 30, 60)',
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-        },
-      }}
-    />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="home" element={<HomePage />} />
+    </Routes>
   );
 }
 
