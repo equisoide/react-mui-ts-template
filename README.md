@@ -174,7 +174,7 @@ You may create subdirectories inside `src`. For faster rebuilds, only files insi
 Only files inside public can be used from `public/index.html`.
 
 ## File extensions
-Most of the files you will create in the `src` folder will be **TypeScript**, **TypeScript with React** or **SASS**.
+Most of the files you will create in the `src` folder will be **TypeScript**, **TypeScript with React** or **SASS**:
 - `.ts`: TypeScript files (Don't use `.js`). Use it for:
   - Utilities. e.g. `arrays.ts`
   - Test of utilities. e.g. `arrays.test.ts`
