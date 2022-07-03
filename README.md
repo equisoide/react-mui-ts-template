@@ -143,7 +143,7 @@ After cloning, your project should look like this:
     ├── 📜 index.tsx                The application entry point
     ├── 📜 react-app-env.d.ts       TypeScript declarations for React App
     ├── 📜 setupTests.ts            Global setup before running tests
-    ├── 📂 components/App
+    ├── 📂 app
     │   └── 📜 index.tsx            The main App component with routes
     ├── 📂 components/HelloWorld
     │   ├── 📜 index.module.scss    Component styles
