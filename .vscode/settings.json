@@ -1,6 +1,5 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
+  // VS Code workspace settings.
   // Learn more: https://code.visualstudio.com/docs/getstarted/settings
   "editor.codeActionsOnSave": {
     "source.fixAll": true
