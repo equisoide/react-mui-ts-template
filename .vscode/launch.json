@@ -1,5 +1,5 @@
 {
-  // Launch Chrome against localhost.
+  // Launch Chrome when debugging from VS Code.
   // Learn more: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
