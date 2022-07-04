@@ -15,7 +15,6 @@ module.exports = {
   "framework": "@storybook/react",
   "core": {
     "builder": "@storybook/builder-webpack5",
-    // By default Storybook collects telemetry data.
     "disableTelemetry": true
   },
   webpackFinal: async (config) => {
