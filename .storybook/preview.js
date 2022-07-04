@@ -1,10 +1,6 @@
 // Use preview.js for global code that applies to all stories.
 // Learn more: https://storybook.js.org/docs/react/configure/overview
-
-// External imports
 import { addParameters } from '@storybook/client-api';
-
-// Local imports
 import initI18n from '../src/lang';
 import '../src/styles/main.scss';
 
