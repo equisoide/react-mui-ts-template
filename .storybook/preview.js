@@ -1,5 +1,7 @@
-// Use preview.js for global code that applies to all stories.
-// Learn more: https://storybook.js.org/docs/react/configure/overview
+/**
+ * Use preview.js for global code that applies to all stories.
+ * Learn more: https://storybook.js.org/docs/react/configure/overview
+ */
 import { addParameters } from '@storybook/client-api';
 import initI18n from '../src/lang';
 import '../src/styles/main.scss';
