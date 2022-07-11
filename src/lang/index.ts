@@ -1,6 +1,8 @@
-// react-i18next is a powerful internationalization framework for
-// React / React Native which is based on i18next.
-// Learn more: https://react.i18next.com
+/**
+ * react-i18next is a powerful internationalization framework for
+ * React/ReactNative which is based on i18next.
+ * Learn more: https://react.i18next.com
+ */
 
 // External imports
 import LanguageDetector from 'i18next-browser-languagedetector';
