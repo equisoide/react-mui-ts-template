@@ -1,3 +1,8 @@
+/**
+ * The HelloWorld component renders an alert with
+ * the package name, version and environment.
+ */
+
 // External imports
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';

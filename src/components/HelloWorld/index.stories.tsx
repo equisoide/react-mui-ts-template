@@ -1,7 +1,7 @@
-// External imports
+/**
+ * Storybook file for the HelloWorld component.
+ */
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-
-// Local imports
 import HelloWorld from '.';
 
 // Story placement in the story list
@@ -10,7 +10,6 @@ export default {
   component: HelloWorld,
 } as ComponentMeta<typeof HelloWorld>;
 
-// Template of how args map to rendering
 const Template: ComponentStory<typeof HelloWorld> = (args) => <HelloWorld {...args} />;
 
 // Story #1
