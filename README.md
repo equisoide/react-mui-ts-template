@@ -150,7 +150,8 @@ After cloning, your project should look like this:
     │   ├── 📜 index.module.scss    Component styles
     │   ├── 📜 index.stories.tsx    Storybook documentation
     │   ├── 📜 index.test.tsx       Jest testing file
-    │   └── 📜 index.tsx            Example component definition
+    │   ├── 📜 index.tsx            Example component definition
+    │   └── ...
     ├── 📂 lang
     │   ├── 📜 index.ts             i18next configuration
     │   ├── 📜 resources.en.json    Application texts in English
