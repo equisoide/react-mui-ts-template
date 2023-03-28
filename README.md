@@ -26,7 +26,7 @@ Constant enums and namespaces are not supported, you can learn about the constra
 - [Storybook 6.5.9](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
-- [ESLint 8.18.0](https://eslint.org) with `Airbnb`, `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [ESLint 8.18.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
 - [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS`/`SCSS` files
 - [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
 - [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
@@ -85,15 +85,15 @@ Constant enums and namespaces are not supported, you can learn about the constra
 | `npm run slint`       | Analyses **CSS**/**SCSS** styles                 | N/A              |
 | `npm run slint:f`     | Try to fix **CSS**/**SCSS** errors               | N/A              |
 | `npm test`            | Executes Unit Tests outputting to `out/coverage` | .env.test        |
-| `npm start`           | Runs the App in http://localhost:3000            | .env.local       |
-| `npm run start-https` | Runs the App in https://localhost:3001 (HTTPS)   | .env.local       |
+| `npm start`           | Runs the App in http://localhost:4000            | .env.local       |
+| `npm run start-https` | Runs the App in https://localhost:4001 (HTTPS)   | .env.https.local |
 | `npm run build:l`     | Builds the App to `out/build/local`              | .env.local       |
 | `npm run build:d`     | Builds the App to `out/build/development`        | .env.development |
 | `npm run build:q`     | Builds the App to `out/build/qa`                 | .env.qa          |
 | `npm run build:s`     | Builds the App to `out/build/staging`            | .env.staging     |
 | `npm run build`       | Builds the App to `out/build/production`         | .env.production  |
-| `npm run sbook`       | Runs Storybook in http://localhost:3002          | .env.local       |
-| `npm run sbook-https` | Runs Storybook in https://localhost:3003 (HTTPS) | .env.local       |
+| `npm run sbook`       | Runs Storybook in http://localhost:4002          | .env.local       |
+| `npm run sbook-https` | Runs Storybook in https://localhost:4003 (HTTPS) | .env.https.local |
 | `npm run sb-build:l`  | Builds Storybook to `out/storybook/local`        | .env.local       |
 | `npm run sb-build:d`  | Builds Storybook to `out/storybook/development`  | .env.development |
 | `npm run sb-build:q`  | Builds Storybook to `out/storybook/qa`           | .env.qa          |
@@ -118,6 +118,7 @@ After cloning, your project should look like this:
 ├── 📜 tsconfig.json                TypeScript configuration
 ├── 📂 .env-override
 │   ├── 📜 .env.development         Environment variables for Development
+│   ├── 📜 .env.https.local         Environment variables for Local (HTTPS)
 │   ├── 📜 .env.local               Environment variables for Local
 │   ├── 📜 .env.production          Environment variables for Production
 │   ├── 📜 .env.qa                  Environment variables for QA
@@ -150,16 +151,15 @@ After cloning, your project should look like this:
     │   ├── 📜 index.stories.tsx    Storybook documentation
     │   ├── 📜 index.test.tsx       Jest testing file
     │   └── 📜 index.tsx            Example component definition
-    ├── 📂 fonts
-    │   └── 📜 material-icons.ttf   Font file for Material Icons
     ├── 📂 lang
     │   ├── 📜 index.ts             i18next configuration
     │   ├── 📜 resources.en.json    Application texts in English
     │   └── 📜 resources.es.json    Application texts in Spanish
+    ├── 📂 pages
+    │   └── ...                     React components for each page
     ├── 📂 stories
     │   └── ...                     Files for the Storybook intro page
     ├── 📂 styles
-    │   ├── 📜 _material-icons.scss Material Icons Font
     │   ├── 📜 _reset.scss          Simple CSS reset for consistent styles
     │   └── 📜 main.scss            Main SASS file
     └── 📂 util
@@ -250,6 +250,19 @@ To generate those files use [mkcert](https://www.mariokandut.com/how-to-setup-ht
   - Generate an SSL certificate with `mkcert localhost`
   - `localhost.pem` and `localhost-key.pem` will be generated
   - Note that these files are included in the `.gitignore`
+
+## Working in StrictMode
+`<StrictMode>` lets you find common bugs in your components early during development. It also helps you to prepare your app for the future. You can read more about it [here](https://react.dev/reference/react/StrictMode).
+
+Strict Mode enables the following development-only behaviors:
+- Your components will re-render an extra time to find bugs caused by impure rendering
+- Your components will re-run Effects an extra time to find bugs caused by missing Effect cleanup
+- Your components will be checked for usage of deprecated APIs.
+
+To enabble/disable StrictMode you can use the `REACT_APP_STRICT_MODE` environment variable. By default it's set to `true` in the following files:
+- `.env.development`
+- `.env.https.local`
+- `.env.local`
 
 ## Working Guidelines
 - Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
