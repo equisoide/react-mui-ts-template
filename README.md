@@ -16,21 +16,21 @@ Constant enums and namespaces are not supported, you can learn about the constra
 
 ## Core Libraries
 - [React 18.2.0](https://reactjs.org) with `React Scripts 5.0.1`
-- [SASS 1.53.0](https://sass-lang.com) with [CSS Modules](https://github.com/css-modules/css-modules)
-- [MUI 5.8.6](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
+- [SASS 1.60.0](https://sass-lang.com) with [CSS Modules](https://github.com/css-modules/css-modules)
+- [MUI 5.11.15](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
 - [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
-- [I18next 21.8.11](https://react.i18next.com) for internationalization
-- [React Router 6.3.0](https://reactrouter.com/) for the routing system
+- [I18next 22.4.13](https://react.i18next.com) for internationalization
+- [React Router 6.9.0](https://reactrouter.com/) for the routing system
 
 ## Documentation Tools
-- [Storybook 6.5.9](https://storybook.js.org) to document components
+- [Storybook 6.5.16](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
-- [ESLint 8.18.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
-- [Stylelint 14.9.1](https://stylelint.io) to analyse `CSS`/`SCSS` files
-- [Jest 27.5.2](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
-- [React Testing Library 13.3.0](https://testing-library.com/docs/react-testing-library/intro) to test components
-- [Web Vitals 2.1.4](https://web.dev/vitals) to meassure performance
+- [ESLint 8.36.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [Stylelint 15.3.0](https://stylelint.io) to analyse `CSS`/`SCSS` files
+- [Jest 29.5.0](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
+- [React Testing Library 14.0.0](https://testing-library.com/docs/react-testing-library/intro) to test components
+- [Web Vitals 3.3.0](https://web.dev/vitals) to meassure performance
 
 ## Built-in Settings
 - [.editorconfig](https://editorconfig.org) settings to standardize charset, ending of lines and indentation
@@ -110,6 +110,7 @@ After cloning, your project should look like this:
 ├── 📜 .eslintignore                Folders and files ignored by ESLint
 ├── 📜 .eslintrc                    ESLint configuration
 ├── 📜 .gitignore                   Folders and files ignored by Git
+├── 📜 .npmrc                       Npm configuration
 ├── 📜 .stylelintrc                 Stylelint configuration
 ├── 📜 LICENSE                      License information
 ├── 📜 package-lock.json            Npm dependency tree to recreate node_modules
