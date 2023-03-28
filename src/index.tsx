@@ -16,11 +16,17 @@ const htmlRoot = document.getElementById('root') as HTMLElement;
 const reactRoot = ReactDOM.createRoot(htmlRoot);
 
 reactRoot.render(
-  <StrictMode>
+  process.env.REACT_APP_SCRICT_MODE === 'true' ? (
+    <StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StrictMode>
+  ) : (
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </StrictMode>,
+  ),
 );
 
 if (process.env.REACT_APP_ENV !== 'production') {
