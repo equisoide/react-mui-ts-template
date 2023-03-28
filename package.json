@@ -5,7 +5,6 @@
   "private": false,
   "homepage": "./",
   "keywords": [
-    "airbnb",
     "emotion",
     "es6",
     "eslint",
@@ -61,7 +60,6 @@
     "babel-plugin-named-exports-order": "^0.0.2",
     "env-cmd": "^10.1.0",
     "eslint": "^8.18.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
     "eslint-plugin-react": "^7.30.1",
@@ -89,12 +87,12 @@
     "sb-build:l": "env-cmd --no-override -f ./.env-override/.env.local build-storybook -s public -o ./out/storybook/local",
     "sb-build:q": "env-cmd --no-override -f ./.env-override/.env.qa build-storybook -s public -o ./out/storybook/qa",
     "sb-build:s": "env-cmd --no-override -f ./.env-override/.env.staging build-storybook -s public -o ./out/storybook/staging",
-    "sbook": "env-cmd --no-override -f ./.env-override/.env.local start-storybook -p 3002 -s public",
-    "sbook-https": "env-cmd --no-override -f ./.env-override/.env.local start-storybook -p 3003 -s public --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
-    "slint": "./node_modules/.bin/stylelint \"src/**/*.{css,scss}\"",
-    "slint:f": "./node_modules/.bin/stylelint --fix \"src/**/*.{css,scss}\"",
-    "start": "PORT=3000 env-cmd --no-override -f ./.env-override/.env.local react-scripts start",
-    "start-https": "PORT=3001 HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem env-cmd --no-override -f ./.env-override/.env.local react-scripts start",
+    "sbook": "env-cmd --no-override -f ./.env-override/.env.local start-storybook -p 4002 -s public",
+    "sbook-https": "env-cmd --no-override -f ./.env-override/.env.https.local start-storybook -p 4003 -s public --https --ssl-cert localhost.pem --ssl-key localhost-key.pem",
+    "slint": "stylelint \"src/**/*.{css,scss}\"",
+    "slint:f": "stylelint --fix \"src/**/*.{css,scss}\"",
+    "start": "env-cmd --no-override -f ./.env-override/.env.local react-scripts start",
+    "start-https": "env-cmd --no-override -f ./.env-override/.env.https.local react-scripts start",
     "test": "env-cmd --no-override -f ./.env-override/.env.test react-scripts test --env=jsdom --coverage --coverageDirectory='./out/coverage' --watchAll=false"
   },
   "jest": {
@@ -103,9 +101,9 @@
       "src/**/*.tsx",
       "!src/**/*.stories.tsx",
       "!src/index.tsx",
-      "!src/app/index.tsx",
       "!src/react-app-env.d.ts",
-      "!src/util/web-vitals.ts"
+      "!src/util/web-vitals.ts",
+      "!src/app/index.tsx"
     ]
   },
   "browserslist": {
