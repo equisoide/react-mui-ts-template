@@ -19,7 +19,7 @@ module.exports = {
     "builder": "@storybook/builder-webpack5",
     "disableTelemetry": true,
   },
-  webpackFinal: async (config) => {
+  "webpackFinal": async (config) => {
     injectEnvVariables(config);
     return config;
   },
