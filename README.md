@@ -20,13 +20,13 @@ Constant enums and namespaces are not supported, you can learn about the constra
 - [MUI 5.11.15](https://mui.com) with `Emotion` styling engine, `Roboto Fonts` and `Material Icons`
 - [TypeScript 4.7.4](https://www.typescriptlang.org) with [ES6](http://es6-features.org)
 - [I18next 22.4.13](https://react.i18next.com) for internationalization
-- [React Router 6.9.0](https://reactrouter.com/) for the routing system
+- [React Router 6.10.0](https://reactrouter.com/) for the routing system
 
 ## Documentation Tools
 - [Storybook 6.5.16](https://storybook.js.org) to document components
 
 ## Code Quality & Performance
-- [ESLint 8.36.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
+- [ESLint 8.37.0](https://eslint.org) with `TypeScript`, `React`, `React Hooks` and `Jest` configuration
 - [Stylelint 15.3.0](https://stylelint.io) to analyse `CSS`/`SCSS` files
 - [Jest 29.5.0](https://jestjs.io/docs/getting-started) to test `JavaScript`/`TypeScript` files
 - [React Testing Library 14.0.0](https://testing-library.com/docs/react-testing-library/intro) to test components
@@ -99,6 +99,11 @@ Constant enums and namespaces are not supported, you can learn about the constra
 | `npm run sb-build:q`  | Builds Storybook to `out/storybook/qa`           | .env.qa          |
 | `npm run sb-build:s`  | Builds Storybook to `out/storybook/staging`      | .env.staging     |
 | `npm run sb-build`    | Builds Storybook to `out/storybook/production`   | .env.production  |
+
+## Running local builds
+You can run local builds of the Application and Storybook by using [http-server](https://github.com/http-party/http-server). The following example creates a local build of the App and runs it using http-server:
+  - `npm run build:l`
+  - `npx http-server out/build/local`
 
 ## Project Structure
 After cloning, your project should look like this:
@@ -265,6 +270,67 @@ To enabble/disable StrictMode you can use the `REACT_APP_STRICT_MODE` environmen
 - `.env.development`
 - `.env.https.local`
 - `.env.local`
+
+## Updating NPM Dependencies
+[npm-check-updates](https://github.com/raineorshine/npm-check-updates) upgrades your `package.json` dependencies to the latest versions, ignoring specified versions. Choose which packages to update in interactive mode:
+```shell
+$ npx ncu -i
+
+Upgrading package.json
+[====================] 46/46 100%
+
+? Choose which packages to update »
+  ↑/↓: Select a package
+  Space: Toggle selection
+  a: Toggle all
+  Enter: Upgrade
+
+❯ (*) react-router-dom   ^6.9.0  →  ^6.10.0
+  (*) typescript         ^4.7.4  →   ^5.0.3
+  (*) webpack           ^5.76.3  →  ^5.77.0
+```
+
+Install selected packages:
+```shell
+? Run npm install to install new versions? » y
+```
+
+Test everything is working fine
+- Delete **node_modules** folder
+- Delete **out** folder (if exists)
+- Install project dependencies for the first time: `npm run init`
+- Restart VS Code in order to refresh **TypeScript Intellisense**
+- Analyse **JavaSript/TypeScript** code: `npm run lint`
+- Try to fix **JavaSript/TypeScript** errors: `npm run lint:f`
+- Analyse **CSS**/**SCSS** styles: `npm run slint`
+- Try to fix **CSS**/**SCSS** errors: `npm run slint:f`
+- Execute Unit Tests outputting to **out/coverage**: `npm test`
+- Run the App in http://localhost:4000: `npm start`
+- Create a locally trusted CA: `mkcert -install`
+- Generate an SSL certificate: `mkcert localhost`
+- Run the App in https://localhost:4001: `npm run start-https` (HTTPS)
+- Build the App to **out/build/local**: `npm run build:l`
+- Run the App local build `npx http-server out/build/local`
+- Build the App to **out/build/development**: `npm run build:d`
+- Run the App development build `npx http-server out/build/development`
+- Build the App to **out/build/qa**: `npm run build:q`
+- Run the App qa build `npx http-server out/build/qa`
+- Build the App to **out/build/staging**: `npm run build:s`
+- Run the App staging build `npx http-server out/build/staging`
+- Build the App to **out/build/production**: `npm run build`
+- Run the App production build `npx http-server out/build/production`
+- Run Storybook in http://localhost:4002: `npm run sbook`
+- Run Storybook in https://localhost:4003: `npm run sbook-https` (HTTPS)
+- Build Storybook to **out/storybook/local**: `npm run sb-build:l`
+- Run the Storybook local build `npx http-server out/storybook/local`
+- Build Storybook to **out/storybook/development**: `npm run sb-build:d`
+- Run the Storybook development build `npx http-server out/storybook/development`
+- Build Storybook to **out/storybook/qa**: `npm run sb-build:q`
+- Run the Storybook qa build `npx http-server out/storybook/qa`
+- Build Storybook to **out/storybook/staging**: `npm run sb-build:s`
+- Run the Storybook staging build `npx http-server out/storybook/staging`
+- Build Storybook to **out/storybook/production**: `npm run sb-build`
+- Run the Storybook production build `npx http-server out/storybook/production`
 
 ## Working Guidelines
 - Never delete and re-generate the `package-lock.json` file from scratch, it will break the App and Storybook! Let `npm` update that file every time you install a new dependency
